@@ -18,8 +18,8 @@ VehicleRequirement = {
     REQUIRED = 'REQUIRED',
 }
 
----@enum Category
-Category = {
+---@enum EmoteType
+EmoteType = {
     EXPRESSIONS = 'Expressions',
     WALKS = 'Walks',
     SHARED = 'Shared',
@@ -28,7 +28,42 @@ Category = {
     EXITS = 'Exits',
     EMOTES = 'Emotes',
     PROP_EMOTES = 'PropEmotes',
+    EMOJI = 'Emojis'
 }
+
+EmoteTypeEmoji = {
+    ['Expressions'] = '🎭',
+    ['Walks'] = '🚶🏻‍♂️',
+    ['Shared'] = '👫',
+    ['Dances'] = '🕺',
+    ['AnimalEmotes'] = '🐩',
+    ['Exits'] = '🏃‍♂️‍➡️',
+    ['Emotes'] = '🎬',
+    ['PropEmotes'] = '📦',
+    ['Emojis'] = '🤪'
+}
+
+---@enum PlacementState
+PlacementState = {
+    NONE = 'None',
+    PREVIEWING = 'Previewing',
+    WALKING = 'Walking',
+    IN_ANIMATION = 'In Animation'
+}
+
+-- Mapping of EmoteTypes to the 5 ACE categories
+AceCategoryFromEmoteType = {
+    [EmoteType.EMOTES] = EmoteType.EMOTES,
+    [EmoteType.PROP_EMOTES] = EmoteType.EMOTES,
+    [EmoteType.DANCES] = EmoteType.EMOTES,
+    [EmoteType.ANIMAL_EMOTES] = EmoteType.EMOTES,
+    [EmoteType.EXITS] = EmoteType.EMOTES,
+    [EmoteType.SHARED] = EmoteType.SHARED,
+    [EmoteType.EXPRESSIONS] = EmoteType.EXPRESSIONS,
+    [EmoteType.WALKS] = EmoteType.WALKS,
+    [EmoteType.EMOJI] = EmoteType.EMOJI,
+}
+
 
 ---@alias Dictionary string
 ---@alias AnimName string
@@ -90,16 +125,27 @@ Category = {
 ---@field ExitEmoteType? "Exits" deprecated. unused.
 ---@field BlendInSpeed? number
 ---@field BlendOutSpeed? number
+---@field PlacementOffset? vector4 offset to apply when using the placement feature. Needed for certain emotes which have default offsets that need to be zeroed out
+---@field PlacementOverridesPhysics? boolean when true, applies flags to make an animation float, and handles collision in a custom way. This is to support animations over ledges where the ped would otherwise fall down.
 
 ---@class AnimationListConfig
 ---@field Expressions table<string, {[1]: AnimName, [2]: Label?}>
----@field Walks table<string, {[1]: AnimName, [2]: Label?}>
+---@field Walks table<string, {[1]: AnimName, [2]: Label?, abusable?: boolean}>
 ---@field Shared table<string, {[1]: Dictionary, [2]: AnimName, [3]: Label, [4]: AnimName?, AnimationOptions?: AnimationOptions, AnimalEmote?: boolean}>
 ---@field Dances table<string, {[1]: Dictionary, [2]: AnimName, [3]: Label, AnimationOptions?: AnimationOptions}>
 ---@field AnimalEmotes table<string, {[1]: Dictionary, [2]: AnimName, [3]: Label, AnimationOptions?: AnimationOptions, AdultAnimation?: boolean, AnimalEmote?: boolean}>
 ---@field Exits table<string, {[1]: Dictionary, [2]: AnimName, [3]: Label, AnimationOptions?: AnimationOptions}>
 ---@field Emotes table<string, {[1]: Dictionary | ScenarioType, [2]: AnimName | ScenarioName, [3]: Label, AnimationOptions?: AnimationOptions, AdultAnimation?: boolean}>
 ---@field PropEmotes table<string, {[1]: Dictionary, [2]: AnimName, [3]: Label, AnimationOptions?: AnimationOptions}>
+
+---@class ExpressionData
+---@field anim string
+---@field label? string
+ 
+---@class WalkData
+---@field anim string
+---@field label? string
+---@field abusable? boolean
 
 ---@class EmoteData
 ---@field [1] AnimName | Dictionary | ScenarioType deprecated: Use anim or dict instead.
@@ -111,8 +157,13 @@ Category = {
 ---@field scenario? string
 ---@field scenarioType? ScenarioType
 ---@field label? string
----@field secondPlayersAnim? string Second player's anim during a shared emote. Defaults to the same as first player if unset.
 ---@field AnimationOptions? AnimationOptions
 ---@field AnimalEmote? boolean
 ---@field AdultAnimation? boolean
----@field category Category
+---@field abusable? boolean true if the emote or walk style has abuse potential such as letting a player change their movement speed, or move through a wall.
+---@field emoteType EmoteType
+
+---@class SharedEmoteData : EmoteData
+---@field secondPlayersAnim? string Second player's anim during a shared emote. Defaults to the same as first player if unset.
+
+---@alias Category string

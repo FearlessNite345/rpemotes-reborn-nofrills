@@ -1,10 +1,12 @@
-Locales['da'] = {
+return {
  -- Danish 🇩🇰
         ['emotes'] = "~h~~p~ Animationer",
         ['danceemotes'] = "~h~~p~ 🕺 Danse Animationer",
         ['animalemotes'] = "~h~~p~ 🐩 Dyr Animationer",
         ['propemotes'] = "~h~~p~ 📦 Rekvisit Animationer",
         ['prop2info'] = "❓ Rekvisit animationer findes i slutningen",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "Sæt (",
         ['newsetemote'] = "~w~ er nu din favorit animation, tryk ~g~CapsLock~w~ for at bruge den.",
         ['cancelemote'] = "~h~~r~ Afbryd animation",
@@ -12,8 +14,7 @@ Locales['da'] = {
         ['walkingstyles'] = "~h~~p~ Gågange 🚶",
         ['resetdef'] = "Nulstil til standard",
         ['normalreset'] = "Normal (Nulstil)",
-        ['moods'] = "~h~~p~ Humør 😒",
-        ['infoupdate'] = "~h~~g~ Credits 🤝",
+        ['moods'] = "~h~~p~ Humør 🎭",
         ['infoupdateav'] = "Information (Opdatering tilgængelig)",
         ['infoupdateavtext'] = "En opdatering er tilgænglig, hent den nyeste version fra ~y~https://github.com/alberttheprince/rpemotes-reborn~w~",
         ['suggestions'] = "Forslag?",
@@ -25,7 +26,6 @@ Locales['da'] = {
         ['emotemenucmd'] = "Skriv /emotemenu for animationsmenuen",
         ['shareemotes'] = "👫 Delte animationer",
         ['shareemotesinfo'] = "Inviter en person i nærheden til at dele en animationer",
-        ['sharedanceemotes'] = "~h~~p~ 🕺 Delete Danse",
         ['notvalidsharedemote'] = "er ikke en gyldig delt animation.",
         ['sentrequestto'] = "Anmodning sendt til ~y~",
         ['nobodyclose'] = "Ingen ~r~personer~w~ i nærheden.",
@@ -44,7 +44,7 @@ Locales['da'] = {
         ['boundto'] = "Bound (%s) to %s",
         ['currentlyboundemotes'] = " Keybind animationer:",
         ['notvalidkey'] = "er ikke en gyldigt nøgle.",
-        ['keybinds'] = "🔢 Keybinds",
+        ['keybinds'] = "Keybinds 🔢",
         ['keybindsinfo'] = "Brug",
         ['searchemotes'] = "~h~~y~ 🔍 Søg efter animation",
         ['searchinputtitle'] = "Søg:",
@@ -59,6 +59,7 @@ Locales['da'] = {
         ['btn_back'] = "Tilbage",
         ['btn_switch'] = "Bevægelse",
         ['btn_increment'] = "Increment",
+        ['btn_preview'] = "Forhåndsvisning",
         ['dead'] = "You can't use emotes while dead!",
         ['swimming'] = "You can't use emotes while swimming",
         ['notvalidpet'] = "RUH ROH! Incorrect ped model detected 🐕!",
@@ -74,5 +75,4 @@ Locales['da'] = {
         ['in_a_vehicle'] = "You can only play this animation while in a vehicle 🚷",
         ['no_anim_crawling'] = "You can't play animations while crawling",
         ['no_anim_right_now'] = "You can't play an animation right now",
-    
 }

@@ -1,10 +1,12 @@
-Locales['hu'] = {
+return {
  -- Hungarian 🇭🇺
         ['emotes'] = "~h~~p~ Animációs Menü 🎬",
         ['danceemotes'] = "~h~~p~ 🕺 Tánc Animációk",
         ['animalemotes'] = "~h~~p~ 🐩 Állatos Animációk",
         ['propemotes'] = "~h~~p~ 📦 Tárgyas Animációk",
         ['prop2info'] = "❓ A Prop Emote-ok a végén találhatók",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "Kiválasztod (",
         ['newsetemote'] = "~w~ lett a kedvenc animációd, nyomj egy ~g~CapsLock~w~-ot a használatához.",
         ['cancelemote'] = "~h~~r~ Animáció Befejezése 🚷",
@@ -12,8 +14,7 @@ Locales['hu'] = {
         ['walkingstyles'] = "~h~~p~ Séta Stílusok 🚶🏻‍♂️",
         ['resetdef'] = "Séta alaphelyzetbe állítása",
         ['normalreset'] = "~h~~r~ Normális (Alaphelyzet)",
-        ['moods'] = "~h~~p~ Archangulatok 😒",
-        ['infoupdate'] = "~h~~g~ Kreditek 🤝🏻",
+        ['moods'] = "~h~~p~ Archangulatok 🎭",
         ['infoupdateav'] = "Információ (frissítés elérhető)",
         ['infoupdateavtext'] = "A frissítés elérhető, a legfrissebb verziót a következő címen tudod beszerezni ~y~https://github.com/alberttheprince/rpemotes-reborn~w~",
         ['suggestions'] = "Javaslatok?",
@@ -25,7 +26,6 @@ Locales['hu'] = {
         ['emotemenucmd'] = "A /emotemenu paranccsal nyisd meg az animációk menüt.",
         ['shareemotes'] = "~h~~p~ 👫 Megosztott animációk",
         ['shareemotesinfo'] = "Hívj meg egy közeli személyt animációra",
-        ['sharedanceemotes'] = "~h~~p~ 🕺 Közös Táncok",
         ['notvalidsharedemote'] = "nem érvényes megosztott animáció.",
         ['sentrequestto'] = "Elküldted a kérelmet a(z) ~y~",
         ['nobodyclose'] = "Senki sincs elég ~r~közel~w~.",
@@ -44,7 +44,7 @@ Locales['hu'] = {
         ['boundto'] = "Rögzített (%s) ehhez %s",
         ['currentlyboundemotes'] = " Jelenleg rögzített animációk:",
         ['notvalidkey'] = "nem érvényes gombkiosztás.",
-        ['keybinds'] = "🔢 Gombkiosztások",
+        ['keybinds'] = "Gombkiosztások 🔢",
         ['keybindsinfo'] = "Használat",
         ['searchemotes'] = "~h~~y~ 🔍 Animációk Keresése",
         ['searchinputtitle'] = "Keresés:",
@@ -59,6 +59,7 @@ Locales['hu'] = {
         ['btn_back'] = "Vissza",
         ['btn_switch'] = "Mozgás",
         ['btn_increment'] = "Increment",
+        ['btn_preview'] = "Előnézet",
         ['swimming'] = "You can't use emotes while swimming",
         ['notvalidpet'] = "RUH ROH! Incorrect ped model detected 🐕!",
         ['animaldisabled'] = "Sorry! Animal emotes are disabled on this server",
@@ -73,5 +74,4 @@ Locales['hu'] = {
         ['in_a_vehicle'] = "You can only play this animation while in a vehicle 🚷",
         ['no_anim_crawling'] = "You can't play animations while crawling",
         ['no_anim_right_now'] = "You can't play an animation right now",
-    
 }

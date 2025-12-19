@@ -1,10 +1,12 @@
-Locales['ar'] = {
- -- Arabic
+return {
+-- Arabic
         ['emotes'] = " ~h~~p~حركات 🎬",
         ['danceemotes'] = "~h~~p~ 🕺 حركات الرقص",
         ['animalemotes'] = "~h~~p~ 🐩 حركات الحيوانات",
         ['propemotes'] = "~h~~p~ 📦  حركات الاوبجكتات",
         ['prop2info'] = "❓ حركات الاوبجكتات تكون محددة في النهاية",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "وضع (",
         ['newsetemote'] = "~w~ هي حركتك المربوطة , اضغط على ~g~CapsLock~w~ لإستخدامها",
         ['cancelemote'] = "~h~~r~  الغاء الحركة 🚷",
@@ -12,8 +14,7 @@ Locales['ar'] = {
         ['walkingstyles'] = "~h~~p~ اساليب المشي 🚶🏻‍",
         ['resetdef'] = "اعادتها للوضع الطبيعي",
         ['normalreset'] = "~h~~r~ العادي (اعادة تعيين)",
-        ['moods'] = "~h~~p~ المزاج 😒",
-        ['infoupdate'] = "حقوق & للاقتراحات 🤝🏻",
+        ['moods'] = "~h~~p~ المزاج 🎭",
         ['infoupdateav'] = "المعلومات (التحديث متاح)",
         ['infoupdateavtext'] = "يوجد تحديث جديد متاح , قم بالحصول عليه من هنا : ~y~https://github.com/alberttheprince/rpemotes-reborn~w~",
         ['suggestions'] = "لديك اقتراحات؟",
@@ -25,7 +26,6 @@ Locales['ar'] = {
         ['emotemenucmd'] = "استخدم امر emotemenu\' قائمة الحركات لفتح قائة الحركات",
         ['shareemotes'] = "~h~~p~ 👫 الحركات المشتركة",
         ['shareemotesinfo'] = "دعوة شخص قريب لعمل حركات معه",
-        ['sharedanceemotes'] = "~h~~p~ 🕺 الرقصات المشتركة",
         ['notvalidsharedemote'] = "هذه ليست حركة مشتركة متاحة.",
         ['sentrequestto'] = "تم ارسال الطلب الى ~y~",
         ['nobodyclose'] = "لا يوجد شخص ~r~قريب عليك~w~ كفاية.",
@@ -58,5 +58,6 @@ Locales['ar'] = {
         ['btn_select'] = "اختيار",
         ['btn_back'] = "العودة",
         ['btn_switch'] = "حركة",
-        ['btn_increment'] = "زيادة"
+        ['btn_increment'] = "زيادة",
+        ['btn_preview'] = "معاينة"
 }

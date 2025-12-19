@@ -18,8 +18,8 @@ local function ResetCrouch()
 
     local walkstyle = GetResourceKvpString("walkstyle")
     if walkstyle then
-        local toApply = EmoteData[walkstyle]
-        if not toApply or type(toApply) ~= "table" or toApply.category ~= Category.WALKS then
+        local toApply = WalkData[walkstyle]
+        if not toApply or type(toApply) ~= "table" then
             ResetPedMovementClipset(playerPed, 0.5)
             DeleteResourceKvp("walkstyle")
             DebugPrint('Invalid walkstyle found in KVP, resetting to default.')
@@ -394,10 +394,12 @@ local function CrawlKeyPressed()
     end
 
     if InHandsup then
+        inAction = false
         return
     end
 
     if IsInActionWithErrorMessage({IsProne = true}) then
+        inAction = false
         return
     end
 

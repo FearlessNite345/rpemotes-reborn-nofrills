@@ -18,9 +18,6 @@ RP.Expressions = { ---- MOODS ----
     ["Burning"] = {
         "burning_1"
     },
-    ["Crying"] = {
-        "console_wasnt_fun_end_loop_floyd_facial"
-    },
     ["Dead"] = {
         "dead_1"
     },
@@ -52,6 +49,10 @@ RP.Expressions = { ---- MOODS ----
     },
     ["Happy"] = {
         "mood_happy_1"
+    },
+    ["High"] = {
+        "mood_dancing_high_1",
+        "High"
     },
     ["Injured"] = {
         "mood_injured_1"
@@ -102,11 +103,26 @@ RP.Expressions = { ---- MOODS ----
     ["Smug"] = {
         "mood_smug_1"
     },
+    ["Smug2"] = {
+        "mood_dancing_medium_4",
+        "Smug 2"
+    },
     ["Speculative"] = {
         "mood_aiming_1"
     },
     ["Stressed"] = {
         "mood_stressed_1"
+    },
+    ["Suggestive"] = {
+        "console_wasnt_fun_end_loop_floyd_facial"
+    },
+    ["Talking"] = {
+        "mood_talking_1",
+        "Talking"
+    },
+    ["Twitch"] = {
+        "mood_skydive_1",
+        "Twitch"
     },
     ["Sulking"] = {
         "mood_sulk_1"
@@ -153,7 +169,8 @@ RP.Walks = {
         "Butch 3"
     },
     ["Bigfoot"] = {
-        "move_characters@orleans@core@"
+        "move_characters@orleans@core@",
+        abusable = true,
     },
     ["Buzzed"] = {
         "move_m@buzzed"
@@ -164,6 +181,10 @@ RP.Walks = {
     ["Brave2"] = {
         "move_m@brave@a",
         "Brave 2"
+    },
+    ["Brave3"] = {
+        "move_m@brave@b",
+        "Brave 3"
     },
     ["Casey"] = {
         "move_casey"
@@ -248,26 +269,26 @@ RP.Walks = {
     ["Dreyfuss"] = {
         "move_dreyfuss"
     },
-    ["DrunkWalk"] = {
+    ["Drunk"] = {
         "move_m@drunk@a"
     },
-    ["DrunkWalk2"] = {
+    ["Drunk2"] = {
         "move_m@buzzed",
         "Drunk 2 - Buzzed"
     },
-    ["DrunkWalk3"] = {
+    ["Drunk3"] = {
         "move_m@drunk@moderatedrunk",
         "Drunk 3 - Moderate"
     },
-    ["DrunkWalk4"] = {
+    ["Drunk4"] = {
         "move_m@drunk@moderatedrunk_head_up",
         "Drunk 4 - Moderate 2"
     },
-    ["DrunkWalk5"] = {
+    ["Drunk5"] = {
         "move_m@drunk@slightlydrunk",
         "Drunk 5 - Slightly Drunk"
     },
-    ["DrunkWalk6"] = {
+    ["Drunk6"] = {
         "move_m@drunk@verydrunk",
         "Drunk 6 - Very Drunk"
     },
@@ -306,23 +327,28 @@ RP.Walks = {
         "Fire 3"
     },
     ["Flee"] = {
-        "move_f@flee@a"
+        "move_f@flee@a",
+        abusable = true,
     },
     ["Flee2"] = {
         "move_f@flee@c",
-        "Flee 2"
+        "Flee 2",
+        abusable = true,
     },
     ["Flee3"] = {
         "move_m@flee@a",
-        "Flee 3"
+        "Flee 3",
+        abusable = true,
     },
     ["Flee4"] = {
         "move_m@flee@b",
-        "Flee 4"
+        "Flee 4",
+        abusable = true,
     },
     ["Flee5"] = {
         "move_m@flee@c",
-        "Flee 5"
+        "Flee 5",
+        abusable = true,
     },
     ["Floyd"] = {
         "move_characters@floyd"
@@ -434,21 +460,32 @@ RP.Walks = {
     },
     ["Hurry"] = {
         "move_m@hurry@a",
-        "Hurry Male"
+        "Hurry Male",
+        abusable = true,
     },
     ["Hurry2"] = {
         "move_f@hurry@a",
-        "Hurry Female"
+        "Hurry Female",
+        abusable = true,
     },
     ["Hurry3"] = {
         "move_f@hurry@b",
-        "Hurry Female 2"
+        "Hurry Female 2",
+        abusable = true,
     },
-    ["InjuredWalk"] = {
+    ["Hurry4"] = {
+    "move_m@hurry@b",
+    "Hurry 4"
+    },
+    ["Hurry5"] = {
+    "move_m@hurry@c",
+    "Hurry 5"
+    },
+    ["Injured"] = {
         "move_m@injured",
         "Injured"
     },
-    ["InjuredWalk2"] = {
+    ["Injured2"] = {
         "move_f@injured",
         "Injured 2 - Female"
     },
@@ -577,6 +614,9 @@ RP.Walks = {
         "move_m@swagger@b",
         "Swagger 2"
     },
+    ["Tense"] = {
+        "move_action@generic@core"
+    },
     ["Tough"] = {
         "move_m@tough_guy@"
     },
@@ -587,7 +627,6 @@ RP.Walks = {
     ["Toolbelt"] = {
         "move_m@tool_belt@a",
         "Toolbelt Male"
-
     },
     ["Toolbelt2"] = {
         "move_f@tool_belt@a",
@@ -613,7 +652,7 @@ RP.Walks = {
     ["Wide"] = {
         "move_m@bag"
     },
-    ["ZombieWalk"] = {
+    ["Zombie"] = {
         "clipset@anim@ingame@move_m@zombie@core"
     },
 }
@@ -1212,6 +1251,37 @@ RP.Shared = {
             bone = 24818,
             pos = vector3(-0.95, 0.16, -0.15),
             rot = vector3(3.70, 75.00, -161.90),
+        },
+        AnimalEmote = true
+    },
+	["ccat"] = {
+        "anim@scripted@freemode@ig1_pickup_cat@male@",
+        "idle_player",
+        "Carry Cat",
+        "ccat",
+        AnimationOptions = {
+            EmoteMoving = true,
+            EmoteLoop = true,
+
+        },
+        AnimalEmote = true
+    },
+    ["ccat2"] = {
+        "anim@scripted@freemode@ig1_pickup_cat@cat@",
+        "idle_cat",
+        "Be Carried - Cat",
+        "ccat2",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            Attachto = true,
+            bone = 28422,
+            xPos = -0.09,
+            yPos = -0.08,
+            zPos = -0.08,
+            xRot = -180.0,
+            yRot = 0.0,
+            zRot = 130.0,
         },
         AnimalEmote = true
     },
@@ -2097,6 +2167,14 @@ RP.Dances = {
             onFootFlag = AnimFlag.LOOP
         }
     },
+    ["danceshy3"] = {
+        "anim@amb@nightclub@mini@drinking@bar@player_bartender@idle_a",
+        "idle_a",
+        "Dance Shy 3",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP
+        }
+    },
     ["danceslow"] = {
         "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@",
         "low_center",
@@ -2201,6 +2279,14 @@ RP.Dances = {
             onFootFlag = AnimFlag.LOOP
         }
     },
+    ["dancesilly12"] = {
+        "anim@amb@nightclub@lazlow@hi_podium@",
+        "danceidle_hi_17_smackthat_laz",
+        "Dance Silly 12",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP
+        }
+    },
     ["danceold"] = {
         "anim@mp_player_intupperuncle_disco",
         "idle_a",
@@ -2223,7 +2309,7 @@ RP.Dances = {
                 0.0,
                 -80.0,
                 20.0,
-                0.0                
+                0.0
             },
             SecondProp = 'ba_prop_battle_glowstick_01',
             SecondPropBone = 60309,
@@ -2454,15 +2540,15 @@ RP.Dances = {
     ["dancewave15"] = { -- Custom Emote By BoringNeptune
         "dancing_wave_part_one@anim",
         "uprock_dance_1",
-        "Wave Dance 15 - Uprock Dance",
+        "Wave Dance 15 - Rock Up Dance",
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-    ["dancethriller"] = { -- Custom Emote By BoringNeptune
-        "mj_thriller",
-        "mj_thriller_dance",
-        "Dance - MJ Thriller",
+    ["zompopdance"] = { -- Custom Emote By BoringNeptune
+        "zompop@danceanim",
+        "zompop_clip",
+        "Dance - Zombie",
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP
         }
@@ -2543,6 +2629,30 @@ RP.Dances = {
         "anim@amb@nightclub@djs@dixon@",
         "dixn_sync_cntr_j_dix",
         "DJ 9",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["dj10"] = {
+        "mini@strip_club@idles@dj@base",
+        "base",
+        "DJ 10",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["dj11"] = {
+        "mini@strip_club@idles@dj@idle_04",
+        "idle_04",
+        "DJ 11",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["dj12"] = {
+        "mini@strip_club@idles@dj@idle_02",
+        "idle_02",
+        "DJ 12",
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
         }
@@ -2831,6 +2941,14 @@ RP.AnimalEmotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
+    ["bdogeat"] = { -- Money Front Required
+        "anim@scripted@tycoon@bt1@ig6_dog_eat@dog@",
+        "loop_dog",
+        "Beg 2 (big dog)",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP
+        }
+    },
     ["bdoglayright"] = {
         "creatures@rottweiler@move",
         "dead_right",
@@ -2860,7 +2978,8 @@ RP.AnimalEmotes = {
         "sit",
         "Sit in car (big dog)",
         AnimationOptions = {
-            onFootFlag = AnimFlag.LOOP
+            vehicleRequirement = VehicleRequirement.REQUIRED,
+            FullBody = true
         }
     },
     ["bdogfhump"] = {
@@ -3081,6 +3200,15 @@ RP.AnimalEmotes = {
         "creatures@pug@amb@world_dog_sitting@idle_a",
         "idle_a",
         "Itch (small dog)",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "sdogup",
+        }
+    },
+    ["sdoglay"] = {
+        "creatures@pug@move",
+        "dead_left",
+        "Lay Down (small dog)",
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "sdogup",
@@ -3814,7 +3942,105 @@ RP.AnimalEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
+    ---- ANIMAL EMOTES ----
+    ----     CATS      ----
+
+    ["catsleep"] = {
+        "amb@lo_res_idles@",
+        "creatures_world_cat_ground_sleep_lo_res_base",
+        "Sleep (Cat)",
+        AnimationOptions = {
+            EmoteLoop = true,
+            ExitEmote = "catexit",
+        }
+    },
+    ["catsleep2"] = {
+        "creatures@cat@amb@world_cat_sleeping_ground@base",
+        "base",
+        "Sleep 2 (Cat)",
+        AnimationOptions = {
+            EmoteLoop = true,
+            ExitEmote = "catexit",
+        }
+    },
+    ["catlayobserve"] = {
+        "creatures@cat@amb@world_cat_sleeping_ledge@idle_a",
+        "idle_a",
+        "Lay and Watch (Cat)",
+        AnimationOptions = {
+            EmoteLoop = true,
+        }
+    },
+    ["catlaywatch"] = {
+        "amb@lo_res_idles@",
+        "creatures_world_cat_ledge_sleep_lo_res_base",
+        "Lay and Watch 2 (Cat)",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["catstretch"] = {
+        "creatures@cat@amb@world_cat_sleeping_ledge@exit",
+        "exit_r",
+        "Stretch (Cat)",
+        AnimationOptions = {
+            EmoteDuration = 800,
+            EmoteLoop = false
+        }
+    },
+    ["catpanic"] = {
+        "creatures@cat@amb@world_cat_sleeping_ground@exit",
+        "exit_panic",
+        "Panic (Cat)",
+        AnimationOptions = {
+            EmoteLoop = false
+        }
+    },
+    ["catplaydead"] = {
+        "creatures@cat@move",
+        "dead_left",
+        "Play Dead (Cat)",
+        AnimationOptions = {
+            EmoteLoop = true,
+            ExitEmote = "catexit",
+        }
+    },
+    ["catplaydead2"] = {
+        "creatures@cat@move",
+        "dying",
+        "Play Dead 2 (Cat)",
+        AnimationOptions = {
+            EmoteLoop = true,
+            ExitEmote = "catexit",
+        }
+    },
+    ["catpensive"] = {
+        "creatures@cat@move",
+        "idle_dwn",
+        "Pensive (Cat)",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["catshuffleright"] = {
+        "creatures@cat@step",
+        "step_rgt",
+        "Shuffle Right (Cat)",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["catshuffleleft"] = {
+        "creatures@cat@step",
+        "step_lft",
+        "Shuffle Left (Cat)",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
 }
+
+
 
 
 --- EXIT EMOTES ---
@@ -3942,6 +4168,14 @@ RP.Exits = {
         "creatures@rottweiler@amb@sleep_in_kennel@",
         "exit_kennel",
         "Big Dog Get Up V2",
+        AnimationOptions = {
+            EmoteDuration = 5000
+        }
+    },
+    ["catexit"] = {
+        "creatures@cat@amb@world_cat_sleeping_ground@exit",
+        "exit",
+        "Cat Get Up",
         AnimationOptions = {
             EmoteDuration = 5000
         }
@@ -4512,14 +4746,6 @@ RP.Emotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-	["khands"] = { -- Custom Emote By EnchantedBrwny
-        "ebrwny_heart000",
-        "ebrwny_hrt000",
-        "Korean Hand Hearts 🇰🇷",
-        AnimationOptions = {
-			onFootFlag = AnimFlag.MOVING,
-        }
-    },
 	["uwu2"] = { -- Custom Emote By EnchantedBrwny
         "ebrwny_pack000",
         "ebrwny_shy",
@@ -4840,6 +5066,30 @@ RP.Emotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
+    ["argue7"] = {
+        "mini@prostitutestalk",
+        "street_argue_f_a",
+        "Argue 7",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["argue8"] = {
+        "rcmnigel1cnmt_1c",
+        "price_tag",
+        "Argue 8",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["argue9"] = {
+        "mini@hookers_sp",
+        "idle_reject",
+        "Argue 9",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
     ["bartender"] = {
         "anim@amb@clubhouse@bar@drink@idle_a",
         "idle_a_bartender",
@@ -5023,6 +5273,11 @@ RP.Emotes = {
             EmoteDuration = 1000
         }
     },
+    ["devestated"] = {
+        "misscarsteal2car_stolen",
+        "chad_car_stolen_reaction",
+        "Devestated"
+    },
     ["pointdown"] = {
         "gestures@f@standing@casual",
         "gesture_hand_down",
@@ -5098,6 +5353,15 @@ RP.Emotes = {
         "anim@scripted@bty4@ig2_bounty_kneel@male@",
         "on_knee_idle_a",
         "Surrender 7",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "getup",
+        }
+    },
+    ["surrender8"] = {
+        "anim@scripted@npc@bounty_ig_surrender@male@",
+        "surrender_idle_bounty",
+        "Surrender 8",
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "getup",
@@ -5205,7 +5469,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["solo_handshake"] = {
+    ["handshake"] = {
         "mp_ped_interaction",
         "handshake_guy_a",
         "Handshake",
@@ -5214,7 +5478,7 @@ RP.Emotes = {
             EmoteDuration = 3000
         }
     },
-    ["solo_handshake2"] = {
+    ["handshake2"] = {
         "mp_ped_interaction",
         "handshake_guy_b",
         "Handshake 2",
@@ -5445,6 +5709,14 @@ RP.Emotes = {
         "anim@scripted@bty2@ig1_hiding_target@male@",
         "hiding_kneel",
         "Kneel Hide",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP
+        }
+    },
+    ["kneelcry"] = {
+        "random@robbery",
+        "f_cower_01",
+        "Kneel And Cry",
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP
         }
@@ -6254,6 +6526,7 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOverridesPhysics = true,
         }
     },
     ["sitchair2"] = {
@@ -6263,6 +6536,7 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOverridesPhysics = true,
         }
     },
     ["sitchair3"] = {
@@ -6272,6 +6546,8 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOffset = vector4(-2.8, -1.0, 0.0, 90.0), -- Prevents floating during placement
+            PlacementOverridesPhysics = true,
         }
     },
     ["sitchair4"] = {
@@ -6281,6 +6557,7 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOverridesPhysics = true,
         }
     },
     ["sitchair5"] = {
@@ -6290,6 +6567,8 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOffset = vector4(1.0, 0.0, 0.0, 30.0), -- Prevents floating during placement
+            PlacementOverridesPhysics = true,
         }
     },
     ["sitchair6"] = {
@@ -6299,6 +6578,7 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOverridesPhysics = true,
         }
     },
     ["sitchair7"] = {
@@ -6308,6 +6588,8 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOffset = vector4(1.0, 0.0, -1.0, 0.0), -- Prevents floating during placement
+            PlacementOverridesPhysics = true,
         }
     },
     ["sitchair8"] = {
@@ -6317,6 +6599,8 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOffset = vector4(0, 0, -1.0, 0.0), -- Prevents floating during placement
+            PlacementOverridesPhysics = true,
         }
     },
     ["sittoilet"] = {
@@ -6326,6 +6610,8 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOffset = vector4(0.0, 0.0, -1.0, 0.0), -- Prevents floating during placement
+            PlacementOverridesPhysics = true,
         }
     },
     ["sittoilet2"] = {
@@ -6335,6 +6621,8 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOffset = vector4(-0.6, 0.8, -1.0, 30.0), -- Prevents floating during placement
+            PlacementOverridesPhysics = true,
         }
     },
     ["sitcute"] = { -- Custom Emote By QueenSistersAnimations
@@ -6344,6 +6632,7 @@ RP.Emotes = {
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "offchair",
+            PlacementOverridesPhysics = true,
         }
     },
     ["situp"] = {
@@ -6480,7 +6769,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["solo_stickup"] = {
+    ["stickup"] = {
         "random@countryside_gang_fight",
         "biker_02_stickup_loop",
         "Stick Up",
@@ -6537,7 +6826,7 @@ RP.Emotes = {
             ExitEmote = "getup",
         }
     },
-    ["Sunbathe4"] = {
+    ["sunbathe4"] = {
         "amb@world_human_sunbathe@male@back@idle_a",
         "idle_a",
         "Sunbathe 4",
@@ -6548,7 +6837,7 @@ RP.Emotes = {
             ExitEmote = "getup",
         }
     },
-    ["Sunbathe5"] = {
+    ["sunbathe5"] = {
         "amb@world_human_sunbathe@female@back@idle_a",
         "idle_a",
         "Sunbathe 5",
@@ -6559,7 +6848,7 @@ RP.Emotes = {
             ExitEmote = "getup",
         }
     },
-    ["Sunbathe6"] = {
+    ["sunbathe6"] = {
         "amb@world_human_sunbathe@female@front@idle_a",
         "idle_c",
         "Sunbathe 6",
@@ -6570,7 +6859,7 @@ RP.Emotes = {
             ExitEmote = "getup",
         }
     },
-        ["Sunbathe7"] = {
+    ["sunbathe7"] = {
         "amb@world_human_sunbathe@male@front@base",
         "base",
         "Sunbathe 7",
@@ -7015,17 +7304,20 @@ RP.Emotes = {
     ["slide"] = {
         "anim@arena@celeb@flat@solo@no_props@",
         "slide_a_player_a",
-        "Slide"
+        "Slide",
+        abusable = true,
     },
     ["slide2"] = {
         "anim@arena@celeb@flat@solo@no_props@",
         "slide_b_player_a",
-        "Slide 2"
+        "Slide 2",
+        abusable = true,
     },
     ["slide3"] = {
         "anim@arena@celeb@flat@solo@no_props@",
         "slide_c_player_a",
-        "Slide 3"
+        "Slide 3",
+        abusable = true,
     },
     ["slugger"] = {
         "anim@arena@celeb@flat@solo@no_props@",
@@ -7113,7 +7405,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["solo_slap"] = {
+    ["slap"] = {
         "melee@unarmed@streamed_variations",
         "plyr_takedown_front_slap",
         "Slap",
@@ -7122,7 +7414,7 @@ RP.Emotes = {
             EmoteDuration = 2000
         }
     },
-    ["solo_headbutt"] = {
+    ["headbutt"] = {
         "melee@unarmed@streamed_variations",
         "plyr_takedown_front_headbutt",
         "Headbutt"
@@ -7467,6 +7759,14 @@ RP.Emotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
+    ["earpiece"] = {
+        "cellphone@",
+        "cellphone_call_listen_base",
+        "Earpiece",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
     ["pull"] = {
         "random@mugging4",
         "struggle_loop_b_thief",
@@ -7498,13 +7798,14 @@ RP.Emotes = {
         "wakeup",
         "Rabbit"
     },
-    ["spiderman"] = {
+    ["hunched"] = {
         "missexile3",
         "ex03_train_roof_idle",
-        "Spider-Man",
+        "Hunched",
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP,
-            vehicleRequirement = VehicleRequirement.NOT_ALLOWED
+            vehicleRequirement = VehicleRequirement.NOT_ALLOWED,
+            ExitEmote = "getup2",
         }
     },
     ["boi"] = {
@@ -7530,7 +7831,7 @@ RP.Emotes = {
         "base",
         "Addict",
         AnimationOptions = {
-            onFootFlag = AnimFlag.LOOP
+            onFootFlag = AnimFlag.LOOP,
         }
     },
     ["handsup"] = {
@@ -9420,7 +9721,54 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP,
         }
     },
-
+    ["pfootball1"] = { -- Custom Emote By Pazeee
+        "pazeee@football1@animations",
+        "pazeee@football1@clip",
+        "Football Back Middle",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["pfootball2"] = { -- Custom Emote By Pazeee
+        "pazeee@football2@animations",
+        "pazeee@football2@clip",
+        "Football Back Right",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["pfootball3"] = { -- Custom Emote By Pazeee
+        "pazeee@football3@animations",
+        "pazeee@football3@clip",
+        "Football Front Right",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["pfootball4"] = { -- Custom Emote By Pazeee
+        "pazeee@football4@animations",
+        "pazeee@football4@clip",
+        "Football Front Middle",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["pfootball5"] = { -- Custom Emote By Pazeee
+        "pazeee@football5@animations",
+        "pazeee@football5@clip",
+        "Football Front Left",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["pfootball6"] = { -- Custom Emote By Pazeee
+        "pazeee@football6@animations",
+        "pazeee@football6@clip",
+        "Football Back Left",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
 }
 
 --- PROP EMOTES GO HERE. CURRENTLY SUPPORTS UP TO ONE OR TWO PROPS  ---
@@ -9735,6 +10083,25 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
+	["batontwirl"] = {
+	        "anim@mp_player_intuppermale@baton_twirl",
+	        "idle_a",
+	        "Baton Twirl",
+	        AnimationOptions = {
+	            Prop = "w_me_nightstick",
+	            PropBone = 28422,
+	            PropPlacement = {
+	                0.00,
+	                0.00,
+	                0.00,
+	                0.00,
+	                0.00,
+	                0.00
+	            },
+	            EmoteLoop = true,
+	            EmoteMoving = true
+	     }
+	},
     ["cake"] = { -- Custom Prop & Emote By BzZz
         "anim@heists@box_carry@",
         "idle",
@@ -9974,7 +10341,7 @@ RP.PropEmotes = {
         "ped_a_enter_loop",
         "Syringe",
         AnimationOptions = {
-            Prop = "prop_single_rose",
+            Prop = "prop_syringe_01",
             PropBone = 18905,
             PropPlacement = {
                 0.11,
@@ -10059,7 +10426,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-        ["stickhummingbird"] = {
+    ["stickhummingbird"] = {
         "anim@heists@humane_labs@finale@keycards",
         "ped_a_enter_loop",
         "Stick Hummingbird",
@@ -10989,6 +11356,75 @@ RP.PropEmotes = {
                 0.0
             },
             onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["whiskeybartender"] = {
+        "mini@drinking",
+        "shots_barman_a",
+        "Pour Shot - Whiskey",
+        AnimationOptions = {
+            Prop = 'ba_prop_battle_whiskey_bottle_2_s',
+            PropBone = 28422,
+            PropPlacement = {
+                0.05,
+                -0.05,
+                -0.05,
+                -60.0,
+                0.0,
+                0.0
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["givedrink"] = {
+        "anim@amb@nightclub@mini@drinking@bar@drink@beer",
+        "intro_bartender",
+        "Give Drink - Beer",
+        AnimationOptions = {
+             Prop = 'prop_amb_beer_bottle',
+            PropBone = 28422,
+            PropPlacement = {
+                0.0,
+                0.0,
+                0.06,
+                0.0,
+                15.0,
+                0.0
+            },
+        }
+    },
+    ["givedrink2"] = {
+        "anim@amb@nightclub@mini@drinking@bar@drink@beer",
+        "intro_bartender",
+        "Give Drink - Beer In Bag",
+        AnimationOptions = {
+             Prop = 'p_cs_bottle_01',
+            PropBone = 28422,
+            PropPlacement = {
+                0.0,
+                0.0,
+                0.06,
+                0.0,
+                15.0,
+                0.0
+            },
+        }
+    },
+    ["givedrink3"] = {
+        "anim@amb@nightclub@mini@drinking@bar@drink@beer",
+        "intro_bartender",
+        "Give Drink - Beer Can",
+        AnimationOptions = {
+             Prop = 'v_res_tt_can01',
+            PropBone = 28422,
+            PropPlacement = {
+                0.0,
+                0.0,
+                0.06,
+                0.0,
+                15.0,
+                0.0
+            },
         }
     },
     ["beer"] = {
@@ -14849,7 +15285,7 @@ RP.PropEmotes = {
                 0.0110,
               -97.9442,
                 3.7058,
-                -23.2367
+              -23.2367
 				},
             onFootFlag = AnimFlag.LOOP,
 
@@ -14868,7 +15304,7 @@ RP.PropEmotes = {
                 0.0110,
               -97.9442,
                 3.7058,
-                -23.2367
+              -23.2367
 				},
             onFootFlag = AnimFlag.MOVING,
         }
@@ -14885,8 +15321,26 @@ RP.PropEmotes = {
                 0.0230,
                -0.0230,
               -90.0000,
-                0.0,
+                0.0000,
               -59.9999
+				},
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["wt5"] = {
+        "missfbi3_steve_phone",
+        "steve_phone_idle_a",
+        "Walkie Talkie 5",
+        AnimationOptions = {
+            Prop = "prop_cs_hand_radio",
+            PropBone = 18905,
+            PropPlacement = {
+                0.1300,
+                0.0500,
+                0.0100,
+             -113.0000,
+                0.0000,
+              -60.0000
 				},
             onFootFlag = AnimFlag.MOVING,
         }
@@ -19666,7 +20120,7 @@ RP.PropEmotes = {
                 0.400000,
                 0.030000,
                 0.010000,
-                0.000000, 
+                0.000000,
                 -90.000000,
                 100.000000
             },
@@ -19684,7 +20138,7 @@ RP.PropEmotes = {
                 0.400000,
                 0.030000,
                 0.010000,
-                0.000000, 
+                0.000000,
                 -90.000000,
                 100.000000
             },
@@ -19930,11 +20384,11 @@ RP.PropEmotes = {
             Prop = 'v_ret_ps_bag_02',
             PropBone = 28422, -- Right Wrist
             PropPlacement = {
-                0.52000, 
-                0.030000, 
-                0.00000, 
-                0.000000, 
-                -90.000000, 
+                0.52000,
+                0.030000,
+                0.00000,
+                0.000000,
+                -90.000000,
                 100.000000
             },
             onFootFlag = AnimFlag.MOVING,
@@ -22388,6 +22842,7 @@ RP.PropEmotes = {
         "beachanims@molly",
         "beachanim_surf_clip",
         "Shield",
+        abusable = true,
         AnimationOptions = {
             Prop = "prop_riot_shield",
             PropBone = 18905,
@@ -22406,6 +22861,7 @@ RP.PropEmotes = {
         "beachanims@molly",
         "beachanim_surf_clip",
         "Shield 2",
+        abusable = true,
         AnimationOptions = {
             Prop = "prop_ballistic_shield",
             PropBone = 18905,

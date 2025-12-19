@@ -11,12 +11,24 @@ function WalkMenuStart(name, force)
         ResetWalk()
         return
     end
-    if not EmoteData[name] or type(EmoteData[name]) ~= "table" or EmoteData[name].category ~= Category.WALKS then
+    local emoteData = WalkData[name]
+    if not emoteData or type(emoteData) ~= "table" then
         EmoteChatMessage("'" .. tostring(name) .. "' is not a valid walk")
         return
     end
 
-    local walk = EmoteData[name].anim
+    -- Check ACE permission
+    if not HasEmotePermission(name, EmoteType.WALKS) then
+        EmoteChatMessage("You don't have permission to use this walk")
+        return
+    end
+
+    if Config.AbusableEmotesDisabled and emoteData.abusable then
+        EmoteChatMessage(Translate('abusableemotedisabled'))
+        return
+    end
+
+    local walk = emoteData.anim
     assert(walk ~= nil)
     RequestWalking(walk)
     SetPedMovementClipset(PlayerPedId(), walk, 0.2)
@@ -35,8 +47,8 @@ end
 
 function WalksOnCommand()
     local WalksCommand = ""
-    for name, data in PairsByKeys(EmoteData) do
-        if type(data) == "table" and data.category == Category.WALKS then
+    for name, data in PairsByKeys(WalkData) do
+        if type(data) == "table" then
             WalksCommand = WalksCommand .. string.lower(name) .. ", "
         end
     end
@@ -69,11 +81,11 @@ if Config.WalkingStylesEnabled and Config.PersistentWalk then
             return false
         end
 
-        local walkstyle = EmoteData[kvp]
-        return walkstyle and type(walkstyle) == "table" and walkstyle.category == Category.WALKS
+        local walkstyle = WalkData[kvp]
+        return walkstyle and type(walkstyle) == "table"
     end
 
-    local function handleWalkstyle()
+    function HandleWalkstyle()
         local kvp = GetResourceKvpString("walkstyle")
         if not kvp then return end
         if walkstyleExists(kvp) then
@@ -86,15 +98,28 @@ if Config.WalkingStylesEnabled and Config.PersistentWalk then
 
     AddEventHandler('playerSpawned', function()
         Wait(3000)
-        handleWalkstyle()
+        HandleWalkstyle()
     end)
 
-    RegisterNetEvent('QBCore:Client:OnPlayerLoaded', handleWalkstyle)
-    RegisterNetEvent('esx:playerLoaded', handleWalkstyle)
+    RegisterNetEvent('QBCore:Client:OnPlayerLoaded', HandleWalkstyle)
+    RegisterNetEvent('esx:playerLoaded', HandleWalkstyle)
 
     AddEventHandler('onResourceStart', function(resource)
-        if resource == GetCurrentResourceName() then
-            handleWalkstyle()
+        if resource ~= GetCurrentResourceName() then return end
+        HandleWalkstyle()
+    end)
+
+    -- Monitor for ped changes and re-apply walkstyle
+    CreateThread(function()
+        local currentPed
+        while true do
+            Wait(1000)
+            local newPed = PlayerPedId()
+            if currentPed ~= newPed then
+                currentPed = newPed
+                Wait(500) -- Small delay to ensure ped is fully loaded
+                HandleWalkstyle()
+            end
         end
     end)
 end

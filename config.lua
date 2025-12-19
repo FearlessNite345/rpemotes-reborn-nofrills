@@ -1,5 +1,3 @@
--- FOR ALL KEYBINDS, GET THE BUTTON STRING HERE: https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
-
 Config = {
     MenuLanguage = 'en', -- Change the language of the menu here
 
@@ -9,35 +7,55 @@ Config = {
     MenuKeybindEnabled = true,
     MenuKeybind = 'F4',
 
-    Keybinding = false,
+    Keybinding = true, -- If set to false, disables the use of Config.KeybindKeys
     keybindKVP = "rpemotes",
     NotificationsAsChatMessage = false,
     Search = true, -- Used to enable or disable the search feature in the menu.
-    CancelPreviousEmote = false, -- If turned on, playing an emote will cancel the previous one.
-    DisableControlsInMenu = false,
+    CancelPreviousEmote = false, -- If true, playing an emote will cancel the previous one and play the newly selected emote, if false, some emotes can be combined/played at the same time
+    DisableControlsInMenu = false, -- Disables all controls (including combat, movement, etc) while menu is open
+    DisableCombatInMenu = false, -- Disables combat (attacking, aiming, melee) while menu is open
+    PreviewPed = true, -- Shows a preview of the emote on the player's ped next to the emote menu. Note that resmon will increase when this when emotes are being previewed.
+    PreviewPedToggle = true, -- Allows players to manually toggle the preview ped on or off (default keybind =)
 
+    -- Group Emotes: Default and Max group emote area that a player can select.
+    GroupEmoteDefaultArea = 5.0,
+    GroupEmoteMaxArea = 10.0,
+    GroupEmoteCountdownTime = 10, -- Time in seconds to wait before starting group emote
+
+    -- Realism/Anti-Exploit
+    EmoteCooldownMs = nil, -- Emote Cooldown in milliseconds. Prevents switching emotes too quickly. If nil, no cooldown is enforced
+    AbusableEmotesDisabled = true, -- if set to true disables any emotes that could be abused in pvp/serious environments that emotes marked abusable = true
+
+    -- Menu Styling
     MenuTitle = '',
     TitleOutline = true,
     TitleColour = { R = 255, G = 0, B = 255, A = 255 },
     MenuPosition = 'right', -- 'left' / 'right'
     CustomMenuEnabled = true, -- Change the header.png to your own image
 
+    -- Emoji Menu
+    EmojiMenuEnabled = true, -- enables Emoji menu for all users
+    EmojiMenuAnimalsOnly = false, -- If true, only non-human peds can use emojis
+    MaxEmojisPerPlayer = 3,     -- Max emojis that can stack (client-side)
+    EmojiCooldownMs = 2500,     -- Cooldown between sends in ms (server-side)
+    EmojiRange = 25.0, -- Distance in meters where emojis are visible
+    StripRichText = false, -- Set to true if using a custom notification system that doesn't support GTA rich text formatting
+
     -- Combat Car, and Player Movement
     DisarmPlayerOnEmote = false,
     AllowPunchingDuringEmote = false,
     AllowEmoteInVehicle = true,
     AllowInWater = false,
+    AllowOnBikes = true, -- Allow emotes when on a vehicle with handlebars
 
     -- Ragdoll
     RagdollEnabled = false,
     RagdollKeybind = 'U',
-
     RagdollAsToggle = true,
 
     -- Expressions, Walks, and More
     ExpressionsEnabled = true,
     PersistentExpression = true,
-
     WalkingStylesEnabled = true,
     PersistentWalk = true,
     SharedEmotesEnabled = true,
@@ -55,7 +73,7 @@ Config = {
     -- Pointing
     PointingEnabled = true,
     PointingKeybindEnabled = true,
-    PointingKeybind = 'B', 
+    PointingKeybind = 'B',
     PointingInCar = false,
     ReplayEmoteAfterPointing = true,
 
@@ -78,15 +96,44 @@ Config = {
     -- News Camera (/newscam)
     NewscamEnabled = false,
 
+    -- Idle Cam
     DisableIdleCam = true,
 
-    -- Preview Ped : Shows a preview of the emote on the player's ped next to the emote menu. Note that resmon will increase when this when emotes are being previewed.
-    PreviewPed = true,
-
+    -- Developer Tools
     CheckForUpdates = true,
     DebugDisplay = false,
+
 }
 
+-- Custom Categories: Define custom categories to organize emotes in the menu
+-- Each category lists emotes grouped by EmoteType. If empty, all emotes of the EmoteType will be included.
+-- Note: An emote can appear in multiple categories
+-- Example: Adds a new custom category which will include all DANCES and a few selected EMOTES.
+-- Config.CustomCategories["Sports & Dances"] = {[EmoteType.DANCES] = {}, [EmoteType.EMOTES] = {"basketball", "yoga", "pushup"}}
+---@type table<string, table<EmoteType, string[]>>
+Config.CustomCategories = {}
+Config.CustomCategories[Translate('danceemotes')] = {
+    [EmoteType.DANCES] = {}
+}
+Config.CustomCategories[Translate('propemotes')] = {
+    [EmoteType.PROP_EMOTES] = {}
+}
+if Config.SharedEmotesEnabled then
+    Config.CustomCategories[Translate('shareemotes')] = {
+        [EmoteType.SHARED] = {}
+    }
+end
+
+-- Require ace perms to use certain emotes.
+---@type table<string, table<EmoteType, string[]>>
+Config.Ace = {
+    -- Example: only players with ACE group.admin can use the drunk emote. Anyone can still use the drunk walk however.
+    --['group.admin'] = {[EmoteType.EMOTES] = {'drunk', 'dance5', 'dance6'}}
+    -- Example 2: only players with ACE group.admin can use the drunk walk.
+    --['group.admin'] = {[EmoteType.WALKS] = {'drunk'}}
+}
+
+-- FOR ALL KEYBINDS, GET THE BUTTON STRING HERE: https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
 Config.KeybindKeys = {
     'NUMPAD4',
     'NUMPAD5',
@@ -144,18 +191,4 @@ Config.DisabledHandsupControls = {
     [345] = true, -- INPUT_VEH_MELEE_HOLD
     [346] = true, -- INPUT_VEH_MELEE_LEFT
     [347] = true, -- INPUT_VEH_MELEE_RIGHT
-}
-
-Config.Credits = {
-    { title = "<b>Thanks to the community<b>", subtitle = "For supporting and using RP Emotes!" },
-    { title = "Thanks ~o~DullPear 🍐~s~", subtitle = "~o~DullPear~s~ for the original dpemotes ❤️" },
-    { title = "Thanks <font color=\"#ff451d\">Mathu_lmn 🇫🇷 </font>", subtitle = "<font color=\"#ff451d\">Mathu_lmn 🇫🇷</font> Maintainer, additional features and fixes 🛠️" },
-    { title = "Thanks <font color=\"#ff451d\">Enzo2991 🇧🇪 </font>", subtitle = "<font color=\"#ff451d\">Enzo2991 🇧🇪 </font> for creating the ped preview functionality, keybind with kvp" },
-    { title = "Thanks <b>Kibook 🐩</b>", subtitle = "<b>Kibook</b> for the addition of Animal Emotes 🐩 submenu." },
-    { title = "Thanks ~y~AvaN0x 🇫🇷~s~", subtitle = "~y~AvaN0x~s~ 🇫🇷 for reformatting and assisting with code and additional features 🙏" },
-    { title = "Thanks <font color=\"#40E0D0\">iSentrie </font>", subtitle = "<font color=\"#40E0D0\">iSentrie</font> for assisting with code 🛠️" },
-    { title = "Thanks <font color=\"#0e64ed\">Mads 🤖</font>", subtitle = "<font color=\"#0e64ed\">Mads 🤖</font> for the addition of Exit Emotes, Crouch & Crawl ⚙️" },
-    { title = "Thanks <font color=\"#ff00c3\">Tigerle 🐯</font>", subtitle = "<font color=\"#ff00c3\">Tigerle</font> for assisting with attached Shared Emotes ⚙️." },
-    { title = "Thanks <font color=\"#1C9369\">northsqrd ⚙️</font>", subtitle = "<font color=\"#1C9369\">northsqrd</font> for assisting with search feature and phone colours 🔎" },
-    { title = "Thanks <font color=\"#15BCEC\">GeekGarage 🤓</font>", subtitle = "<font color=\"#15BCEC\">GeekGarage</font> for assisting with code and features" },
 }

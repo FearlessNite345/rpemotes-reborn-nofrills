@@ -1,10 +1,12 @@
-Locales['fi'] = {
+return {
  -- Finnish 🇫🇮
         ['emotes'] = "~h~~p~ Animaatiot 🎬",
         ['danceemotes'] = "~h~~p~ 🕺 Tanssi Animaatiot",
         ['animalemotes'] = "~h~~p~ 🐩 Eläin Animaatiot",
         ['propemotes'] = "~h~~p~ 📦 Esine Animaatiot",
         ['prop2info'] = "❓ Esine animaatiot voivat sijaita lopussa",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "Aseta (",
         ['newsetemote'] = "~w~ on nyt bindattu animaatio, paina ~g~CapsLock~w~ käyttääksesi",
         ['cancelemote'] = "~h~~r~ Peru animaatio 🚷",
@@ -12,8 +14,7 @@ Locales['fi'] = {
         ['walkingstyles'] = "~h~~p~ Kävelytyylit 🚶🏻‍♂️",
         ['resetdef'] = "Resetoi oletuksen",
         ['normalreset'] = "~h~~r~ Normaali (Reset)",
-        ['moods'] = "~h~~p~ Mielialat 😒",
-        ['infoupdate'] = "~h~~g~ Krediitit 🤝🏻",
+        ['moods'] = "~h~~p~ Mielialat 🎭",
         ['infoupdateav'] = "Informaatio (Päivitys saatavilla)",
         ['infoupdateavtext'] = "Uusin versio saatavilla täältä ~y~https://github.com/alberttheprince/rpemotes-reborn~w~",
         ['suggestions'] = "Ehdotukset?",
@@ -25,7 +26,6 @@ Locales['fi'] = {
         ['emotemenucmd'] = "Käytä /emotemenu avataksesi animaatio valikon",
         ['shareemotes'] = "~h~~p~ 👫 Yhteiset Animaatiot",
         ['shareemotesinfo'] = "Kutsu lähin pelaaja animaatioon ",
-        ['sharedanceemotes'] = "~h~~p~ 🕺 Yhteiset Tanssit",
         ['notvalidsharedemote'] = "Ei ole yhteinen tanssi animaatio.",
         ['sentrequestto'] = "Kutsu lähetetty pelaajalle ~y~",
         ['nobodyclose'] = "Kukaan ei ole ~r~lähelläsi~w~.",
@@ -44,7 +44,7 @@ Locales['fi'] = {
         ['boundto'] = "Bindata (%s) näppäimeen %s",
         ['currentlyboundemotes'] = "Bindatut animaatiot:",
         ['notvalidkey'] = "ei ole käytettävä näppäin.",
-        ['keybinds'] = "🔢 Pikanäppäimet",
+        ['keybinds'] = "Pikanäppäimet 🔢",
         ['keybindsinfo'] = "Käytä",
         ['searchemotes'] = "~h~~y~ 🔍 Etsiäksesi emoten",
         ['searchinputtitle'] = "Etsi:",
@@ -59,6 +59,7 @@ Locales['fi'] = {
         ['btn_back'] = "Takaisin",
         ['btn_switch'] = "Liike",
         ['btn_increment'] = "Lisäys",
+        ['btn_preview'] = "Esikatselu",
         ['dead'] = "You can't use emotes while dead!",
         ['swimming'] = "You can't use emotes while swimming",
         ['notvalidpet'] = "RUH ROH! Vääränlainen ped modeli havaittu! 🐕",
@@ -74,5 +75,4 @@ Locales['fi'] = {
         ['in_a_vehicle'] = "Voit toistaa tämän animaation vain ajoneuvossa",
         ['no_anim_crawling'] = "Animaatiota ei voi toistaa ryömiessä",
         ['no_anim_right_now'] = "You can't play an animation right now",
-    
 }
