@@ -17,10 +17,17 @@ local function ResetCrouch()
     SetPedCanPlayAmbientAnims(playerPed, true)
 
     local walkstyle = GetResourceKvpString("walkstyle")
-    if walkstyle ~= nil then
-        RequestWalking(walkstyle)
-        SetPedMovementClipset(PlayerPedId(), walkstyle, 0.5)
-        RemoveClipSet(walkstyle)
+    if walkstyle then
+        local toApply = WalkData[walkstyle]
+        if not toApply or type(toApply) ~= "table" then
+            ResetPedMovementClipset(playerPed, 0.5)
+            DeleteResourceKvp("walkstyle")
+            DebugPrint('Invalid walkstyle found in KVP, resetting to default.')
+            return
+        end
+        RequestWalking(toApply.anim)
+        SetPedMovementClipset(PlayerPedId(), toApply.anim, 0.5)
+        RemoveClipSet(toApply.anim)
     else
         ResetPedMovementClipset(playerPed, 0.5)
     end
@@ -180,11 +187,7 @@ end
 ---@param playerPed number
 ---@return boolean
 local function ShouldPlayerDiveToCrawl(playerPed)
-    if IsPedRunning(playerPed) or IsPedSprinting(playerPed) then
-        return true
-    end
-
-    return false
+    return IsPedRunning(playerPed) or IsPedSprinting(playerPed)
 end
 
 ---Stops the player from being prone
@@ -204,23 +207,22 @@ end
 
 ---@param forceEnd boolean
 local function PlayExitCrawlAnims(forceEnd)
-    if not forceEnd then
-        inAction = true
-        local playerPed = PlayerPedId()
-        local animDict, animName, waitTime
+    if forceEnd then return end
+    inAction = true
+    local playerPed = PlayerPedId()
+    local animDict, animName, waitTime
 
-        if proneType == 'onfront' then
-            animDict, animName, waitTime = 'get_up@directional@transition@prone_to_knees@crawl', 'front', 780
-        else
-            animDict, animName, waitTime = 'get_up@directional@transition@prone_to_seated@crawl', 'back', 950
-        end
+    if proneType == 'onfront' then
+        animDict, animName, waitTime = 'get_up@directional@transition@prone_to_knees@crawl', 'front', 780
+    else
+        animDict, animName, waitTime = 'get_up@directional@transition@prone_to_seated@crawl', 'back', 950
+    end
 
-        PlayAnimOnce(playerPed, animDict, animName, nil, nil, waitTime)
+    PlayAnimOnce(playerPed, animDict, animName, nil, nil, waitTime)
 
-        if not isCrouched then
-            Wait(waitTime)
-            PlayAnimOnce(playerPed, 'get_up@directional@movement@from_'..(proneType == 'onfront' and 'knees' or 'seated')..'@standard', 'getup_l_0', nil, nil, 1300)
-        end
+    if not isCrouched then
+        Wait(waitTime)
+        PlayAnimOnce(playerPed, 'get_up@directional@movement@from_'..(proneType == 'onfront' and 'knees' or 'seated')..'@standard', 'getup_l_0', nil, nil, 1300)
     end
 end
 
@@ -234,13 +236,13 @@ local function Crawl(playerPed, type, direction)
     TaskPlayAnim(playerPed, 'move_crawl', type..'_'..direction, 8.0, -8.0, -1, 2, 0.0, false, false, false)
 
     local time = {
-        ['onfront'] = {
-            ['fwd'] = 820,
-            ['bwd'] = 990
+        onfront = {
+            fwd = 820,
+            bwd = 990
         },
-        ['onback'] = {
-            ['fwd'] = 1200,
-            ['bwd'] = 1200
+        onback = {
+            fwd = 1200,
+            bwd = 1200
         }
     }
 
@@ -392,10 +394,12 @@ local function CrawlKeyPressed()
     end
 
     if InHandsup then
+        inAction = false
         return
     end
 
-    if IsInActionWithErrorMessage({['IsProne'] = true}) then
+    if IsInActionWithErrorMessage({IsProne = true}) then
+        inAction = false
         return
     end
 

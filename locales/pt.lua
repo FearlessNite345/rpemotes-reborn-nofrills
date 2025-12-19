@@ -1,10 +1,12 @@
-Locales['pt'] = {
+return {
  -- Brazilian Portuguese 🇧🇷
         ['emotes'] = "~h~~p~ Emotes 🎬",
         ['danceemotes'] = "~h~~p~ 🕺 Emotes de Danças",
         ['animalemotes'] = "~h~~p~ 🐩 Emotes de Animais",
         ['propemotes'] = "~h~~p~ 📦 Emotes com Props",
         ['prop2info'] = "❓ Emotes de props podem ser localizados no fim",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "Set (",
         ['newsetemote'] = "~w~ é o seu emote vinculado, pressione ~g~CapsLock~w~ para usá-lo",
         ['cancelemote'] = "~h~~r~ Cancelar emote 🚷",
@@ -12,8 +14,7 @@ Locales['pt'] = {
         ['walkingstyles'] = "~h~~p~ Estilos de Caminhada 🚶🏻‍♂️",
         ['resetdef'] = "Resetar para o padrão",
         ['normalreset'] = "~h~~r~ Normal (Resetar)",
-        ['moods'] = "~h~~p~ Humores 😒",
-        ['infoupdate'] = "~h~~y~ Crédito 🤝🏻",
+        ['moods'] = "~h~~p~ Humores 🎭",
         ['infoupdateav'] = "Informação (Atualização disponível)",
         ['infoupdateavtext'] = "Uma atualização disponível, veja ~y~https://github.com/alberttheprince/rpemotes-reborn~w~ para pegar",
         ['suggestions'] = "Sugestões?",
@@ -25,7 +26,6 @@ Locales['pt'] = {
         ['emotemenucmd'] = "Use /emotemenu para abrir o menu.",
         ['shareemotes'] = "~h~~p~ 👫 Emotes compartilhados",
         ['shareemotesinfo'] = "Convide uma pessoa próxima para realizar a animação",
-        ['sharedanceemotes'] = "~h~~p~ 🕺 Danças compartilhadas",
         ['notvalidsharedemote'] = "não é um emote compartilhado válido.",
         ['sentrequestto'] = "Enviar solicitação para ~y~",
         ['nobodyclose'] = "Ninguém próximo o ~r~suficiente~w~.",
@@ -44,7 +44,7 @@ Locales['pt'] = {
         ['boundto'] = "Vinculado (~y~%s~w~) para ~g~%s~w~",
         ['currentlyboundemotes'] = "Emotes atualmente vinculados: ",
         ['notvalidkey'] = "isto não é uma chave válida",
-        ['keybinds'] = "🔢 Keybinds",
+        ['keybinds'] = "Keybinds 🔢",
         ['keybindsinfo'] = "Usar",
         ['searchemotes'] = "~h~~y~ 🔍 Procure por Emotes",
         ['searchinputtitle'] = "Procurar:",
@@ -59,6 +59,7 @@ Locales['pt'] = {
         ['btn_back'] = "Voltar",
         ['btn_switch'] = "Movimento",
         ['btn_increment'] = "Incremento",
+        ['btn_preview'] = "Visualizar",
         ['dead'] = "You can't use emotes while dead!",
         ['swimming'] = "You can't use emotes while swimming",
         ['notvalidpet'] = "RUH ROH! Incorrect ped model detected 🐕!",
@@ -74,5 +75,4 @@ Locales['pt'] = {
         ['in_a_vehicle'] = "You can only play this animation while in a vehicle 🚷",
         ['no_anim_crawling'] = "You can't play animations while crawling",
         ['no_anim_right_now'] = "You can't play an animation right now",
-    
 }

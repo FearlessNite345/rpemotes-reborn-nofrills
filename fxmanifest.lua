@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 description 'rpemotes-reborn'
-version '1.9.0'
+version '2.0.1'
 
 lua54 'yes'
 use_experimental_fxv2_oal 'yes'
@@ -15,21 +15,25 @@ dependencies {
 
 files {
     'conditionalanims.meta',
-    'header.png'
+    'header.png',
+    'locales/*.lua'
 }
 
+-- Unlocks idle Animations from GTA:O when using motorcycles, dirt bikes, etc
 data_file 'CONDITIONAL_ANIMS_FILE' 'conditionalanims.meta'
 
 shared_scripts {
-    'config.lua',
+    'types.lua',
     'locale.lua',
-    'locales/*.lua',
-    'animals.lua'
+    'config.lua',
+    'shared/ModelCompat.lua',
 }
 
 server_scripts {
     'server/Server.lua',
     'server/Updates.lua',
+    'server/emojis.lua',
+    'server/GroupEmote.lua'
 }
 
 client_scripts {
@@ -41,10 +45,12 @@ client_scripts {
     'client/Binoculars.lua',
     'client/Crouch.lua',
     'client/Emote.lua',
+    'client/GroupEmote.lua',
     'client/EmoteMenu.lua',
     'client/Expressions.lua',
     'client/Handsup.lua',
     'client/Keybinds.lua',
+    'client/Favorites.lua',
     'client/NewsCam.lua',
     'client/NoIdleCam.lua',
     'client/Pointing.lua',
@@ -52,8 +58,9 @@ client_scripts {
     'client/Ragdoll.lua',
     'client/Syncing.lua',
     'client/Walk.lua',
+    'client/Placement.lua',
+    'client/emojis.lua',
 }
-
 
 data_file 'DLC_ITYP_REQUEST' 'stream/rpemotesreborn_props.ytyp'
 

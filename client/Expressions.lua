@@ -1,8 +1,8 @@
 function SetPlayerPedExpression(expression, saveToKvp)
-    local emote = RP[expression]
-    if emote and emote.category == "Expressions" then
-        SetFacialIdleAnimOverride(PlayerPedId(), emote[1], 0)
-        if Config.PersistentExpression and saveToKvp then SetResourceKvp("expression", emote[1]) end
+    local emote = ExpressionData[expression]
+    if emote then
+        SetFacialIdleAnimOverride(PlayerPedId(), emote.anim, 0)
+        if Config.PersistentExpression and saveToKvp then SetResourceKvp("expression", emote.anim) end
     else
         ClearFacialIdleAnimOverride(PlayerPedId())
         DeleteResourceKvp("expression")
@@ -12,9 +12,14 @@ end
 if Config.ExpressionsEnabled then
     RegisterCommand('mood', function(_source, args, _raw)
         local expression = FirstToUpper(string.lower(args[1]))
-        local emote = RP[expression]
-        if emote and emote.category == "Expressions" then
-            SetPlayerPedExpression(RP[expression][1], true)
+        local emote = ExpressionData[expression]
+        if emote then
+            -- Check ACE permission
+            if not HasEmotePermission(expression, EmoteType.EXPRESSIONS) then
+                EmoteChatMessage("You don't have permission to use this expression")
+                return
+            end
+            SetPlayerPedExpression(emote.anim, true)
         elseif expression == "Reset" then
             ClearFacialIdleAnimOverride(PlayerPedId())
             DeleteResourceKvp("expression")
@@ -43,8 +48,7 @@ if Config.ExpressionsEnabled then
     end
 
     AddEventHandler('onResourceStart', function(resource)
-        if resource == GetCurrentResourceName() then
-            LoadPersistentExpression()
-        end
+        if resource ~= GetCurrentResourceName() then return end
+        LoadPersistentExpression()
     end)
 end

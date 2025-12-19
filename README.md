@@ -1,4 +1,5 @@
-![image](https://github.com/alberttheprince/rpemotes-reborn/assets/85725579/25b38001-1b50-42ff-b9c9-07046d8be0a1)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4c939484-1a0a-4772-afff-bb44aed6ea4a" />
+
 
 Rpemotes-reborn is a community-driven FiveM emote menu allowing players to express themselves in roleplay with custom animations, countless facial expressions, walk styles, and props.
 
@@ -10,27 +11,39 @@ Interested in joining our community? You can find our Discord [here](https://dis
 
 # Features 🛠️
 
-- Emote Preview - View emotes before you use them
+- Emote Preview & Placement - View and place emotes before using them!
 
-- Changeable Banner Font
+- Customizable Banner (Change the image, text, and text color)
 
-- Changeable Banner Colour
+- Emote Search Function 🔎
 
-- Multiple Translations 🌏
+- Community contributed custom animations 🕺
 
-- Search Function 🔎
+- Group emotes: Dance, salute, and more with 2 or more people
 
-- Custom Animations with **permission from the community** 🏃
+- Exit Emotes: Exit out of emotes with smooth transitions
 
-- Persistent Facial Expressions via client KVP 🤪
+- Persistent Facial Expressions and Walkstyles via client KVP 
+
+- Easily convert Menyoo to RPEmotes 🔄
+
+- Hide Adult Emotes 🔞
+
+- Hide Animal Emotes ⛔
 
 - Animal Emotes 🐩
 
-- Shared Dances 🕺💃
+- Shared Particle Effects: emotes with smoke effects, fire, and more 💨
 
-- Persistent Walkstyles via client KVP 🚶‍♂️ - Standalone, QB-Core and ESX support!
+- QB-Core + ESX Framework & KVP Keybinding Support ⚙️
+
+- Support for shared and couple poses/animations 👫
 
 - Persistent Disabling Of Idle Camera via KVP 🎥
+
+- Easy To Understand Configuration File ⚙️
+
+- Props Extractor for anti-cheat scripts 💾
 
 - Crouching 🐞
 
@@ -42,27 +55,10 @@ Interested in joining our community? You can find our Discord [here](https://dis
 
 - Hands up 🙌
 
-- Shared Particle Effects 💨
-
-- QB-Core Framework & KVP Keybinding Support ⚙️
-
-- Further support for shared and couple poses/animations 👫
-
-- Easily convert Menyoo to RPEmotes 🔄
-
-- Hide Adult Emotes 🔞
-
-- Hide Animal Emotes ⛔
-
-- Easy To Understand Configuration File ⚙️
-
-- Exit Emotes 😎
-
 - Working Binoculars 👀
 
 - News Camera 🎤📹
 
-- Props Extractor for anti-cheat scripts 💾
 
 **Available in the following languages:**
 
@@ -74,16 +70,6 @@ All languages were translated or contributed by the FiveM community, with the od
 
 If you find any incorrect translations or would like to add more languages, please make a pull request with the corrections.
 
-# Header
-
-To edit the header, find the image in the main directory of rpemotes-reborn and edit the image in your program of choice. The image dimensions are 512 x 128.
-
-Do not change the name of the image file.
-
-Example Banner:
-![image](https://github.com/user-attachments/assets/dac5b7e5-4b63-4d10-8d59-3e8502d9913c)
-
-**Note for users of older versions of rpemotes:** Previously, the banner was hosted through a web link on an image hosting website. Due to various image hosting sites dealing with large amounts of traffic from FiveM, they cut off access to FiveM.
 
 # Exports and Documentation
 
@@ -94,7 +80,6 @@ The rpemotes-reborn resource has the following exports:
 ```lua
 exports["rpemotes-reborn"]:EmoteCommandStart(emoteName, textureVariation)
 exports["rpemotes-reborn"]:EmoteCancel(forceCancel) – forceCancel is optional
-exports["rpemotes-reborn"]:CanCancelEmote(state)
 exports["rpemotes-reborn"]:IsPlayerCrouched()
 exports["rpemotes-reborn"]:IsPlayerProne()
 exports["rpemotes-reborn"]:StopPlayerProne(force) -- force is optional
@@ -110,11 +95,14 @@ exports["rpemotes-reborn"]:setWalkstyle(name, force) -- name = "move_m@alien" or
 exports["rpemotes-reborn"]:toggleWalkstyle(bool, message) -- bool to allow the user to change their walkstyle in the menu or not / message to show the user (optional, default is :"You are unable to change your walking style right now.")"
 ```
 
-Having issues with players using emotes when/where they're not supposed to? Use the following where you need. This would be somewhere like if you want to disable emotes in jail or when someone is handcuffed/escorted:
+Having issues with players using emotes when/where they're not supposed to? Use the following where needed. This would be somewhere like if you want to disable emotes in jail or when someone is handcuffed/escorted. We've also added one for blocking emote cancels!
 
 ```lua
-LocalPlayer.state:set('canEmote', false, true) -- stops emoting
-LocalPlayer.state:set('canEmote', true, true) -- allows emoting
+LocalPlayer.state:set('canEmote', false, true) -- Blocks players from emoting
+LocalPlayer.state:set('canEmote', true, true) -- Allows players to emote
+
+LocalPlayer.state:set('canCancel', false, true) -- Blocks players from using emote cancel
+LocalPlayer.state:set('canCancel', true, true) -- Allows players to use emote cancel
 ```
 
 # Menu Keybind 🎛️
@@ -147,7 +135,18 @@ Alternatively, you can use the keybind command that comes with FiveM without hav
 
 `bind keyboard "Yourbutton" "e youremote"`. To remove the keybind, type `"unbind keyboard "Yourbutton"`.
 
-# Menu Customization
+# Menu Customization: Header
+
+To edit the header, find the image in the main directory of rpemotes-reborn and edit the image in your program of choice. The image dimensions are 512 x 128.
+
+Do not change the name of the image file.
+
+Example Banner:
+![image](https://github.com/user-attachments/assets/dac5b7e5-4b63-4d10-8d59-3e8502d9913c)
+
+**Note for users of older versions of rpemotes:** Previously, the banner was hosted through a web link on an image hosting website. Due to various image hosting sites dealing with large amounts of traffic from FiveM, they cut off access to FiveM.
+
+# Menu Customization: Title
 
 In the`config.lua` file, server owners can set the MenuTitle or simply leave it blank. Ideally, this should be 11 characters or less without any spaces.
 You can also set the font and decide whether or not you want an outline and MenuPosition. The available fonts are as follows:
@@ -246,7 +245,6 @@ No Idle Cam allows players to disable the idle camera animation on foot and in v
 | G           | Show or hide the instructions                 |
 | BACKSPACE   | Exit the binoculars                           |
 
-<img src="https://forum.cfx.re/uploads/default/original/4X/2/6/3/263b6f2afe148191193fca8c8cc0b9bc666da9e8.jpeg" width="600" height="auto">
 
 # News Camera
 
@@ -258,7 +256,6 @@ No Idle Cam allows players to disable the idle camera animation on foot and in v
 | G         | Show or hide the instructions |
 | BACKSPACE | Exit News Camera              |
 
-<img src="https://forum.cfx.re/uploads/default/optimized/4X/5/4/e/54e47db5ae45f5afa4b84c2ae4858bc9ab0a8187_2_690x388.jpeg" width="600" height="auto">
 
 # Exit Emotes
 
@@ -275,9 +272,8 @@ Below is an example of how this would look:
         "sit_phone_phoneputdown_idle_nowork",
         "Sit",
         AnimationOptions = {
-            EmoteLoop = true,
+            onFootFlag = AnimFlag.LOOP,
             ExitEmote = "getup",
-            ExitEmoteType = "Exits"
         }
     },
 ```
@@ -463,6 +459,9 @@ All animation creators have **_specifically_** asked that their content remain f
 ### Developers:
 - [The Popcorn RP community](https://discord.gg/popcornroleplay) for putting up with all my emote menu testing and troubleshooting issues with me
 - [Mathu_lmn](https://github.com/Mathu-lmn) for maintaining the menu and adding features
+- [Manason](https://github.com/Manason) for major overhauls, refactors, and improvements of rpemotes-reborn during push to 2.0
+- [CritteRo](CritteRo) for work on shared emotes placement and other refactors and fixes of rpemotes-reborn during push to 2.0
+- [ChristopherM](https://github.com/cm8263) for creation of the emote placement feature and fixes of rpemotes-reborn during push to 2.0
 - [enzo2991](https://github.com/enzo2991) for creating the ped preview functionality, keybind with kvp
 - [DerDevHD](https://forum.cfx.re/t/fixed-remove-prop-after-scenario-animation/5002332/8) for the insight on deleting scenario props.
 - [iSentrie](https://forum.cfx.re/u/isentrie/) for additional code, support, and joining the RPEmotes project
@@ -477,6 +476,7 @@ All animation creators have **_specifically_** asked that their content remain f
 - Crusopaul and Eki for discussing KVP and initializing it to the menu for persistent walk styles
 
 ### Emote & Props Creators:
+- [FalseHopeDesigns](https://falsehopedesigns.tebex.io/) for creation of collisionless props
 - [SMGMissy](https://jenscreations.tebex.io/) for creating the pride flag props
 - [MissSnowie](https://www.gta5-mods.com/users/MissySnowie)
 - [Smokey](https://www.gta5-mods.com/users/struggleville)
@@ -514,3 +514,4 @@ All animation creators have **_specifically_** asked that their content remain f
 - [41anims](https://www.gta5-mods.com/users/41anims)
 - [corbs](https://www.gta5-mods.com/users/corbs)
 - [jaysigx](https://www.gta5-mods.com/misc/improved-umbrella)
+- [Payzee](https://pazeee.tebex.io/)

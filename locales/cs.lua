@@ -1,10 +1,12 @@
-Locales['cs'] = {
+return {
  -- Czech 🇨🇿
         ['emotes'] = "~h~~p~ Animace 🎬",
         ['danceemotes'] = "~h~~p~ 🕺 Taneční Animace",
         ['animalemotes'] = "~h~~p~ 🐩 Zvířecí Animace",
         ['propemotes'] = "~h~~p~ 📦 Animace s předměty",
         ['prop2info'] = "❓ Pomůcky se mohou nacházet na konci",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "Nastavit",
         ['newsetemote'] = "~w~ je nyní vaší novou nastavenou animací. Chcete-li jej použít, stiskněte ~g~CapsLock~w~.",
         ['cancelemote'] = "~h~~r~ Zrušit animaci 🚷",
@@ -12,8 +14,7 @@ Locales['cs'] = {
         ['walkingstyles'] = "Styly chůze 🚶🏻‍♂️",
         ['resetdef'] = "Obnovit do základního nastavení",
         ['normalreset'] = "~h~~r~ Neutrální výraz",
-        ['moods'] = "~h~~p~ Výrazy 😒",
-        ['infoupdate'] = "~h~~g~ Kredity 🤝🏻",
+        ['moods'] = "~h~~p~ Výrazy 🎭",
         ['infoupdateav'] = "Informace (aktualizace dostupná)",
         ['infoupdateavtext'] = "Je k dispozici aktualizace, stáhněte si nejnovější verzi z ~y~https://github.com/alberttheprince/rpemotes-reborn~w~",
         ['suggestions'] = "Nápady?",
@@ -25,7 +26,6 @@ Locales['cs'] = {
         ['emotemenucmd'] = "Použij /emotemenu pro otevření menu.",
         ['shareemotes'] = "~h~~p~ 👫 Sdílené animace",
         ['shareemotesinfo'] = "Pozvěte osobu v okolí, k tanci",
-        ['sharedanceemotes'] = "~h~~p~ 🕺 Sdílené tance",
         ['notvalidsharedemote'] = "Není platný Sdílený tanec.",
         ['sentrequestto'] = "Odeslal jsi ~y~ žádost o tanec ",
         ['nobodyclose'] = "Nikdo ~r~není~w~ v dostatečné blízkosti.",
@@ -44,7 +44,7 @@ Locales['cs'] = {
         ['boundto'] = "Bound (%s) to %s",
         ['currentlyboundemotes'] = "Momentálně nastavené animace:",
         ['notvalidkey'] = "Není platná klávesa.",
-        ['keybinds'] = "🔢 Klávesové Zkratky",
+        ['keybinds'] = "Klávesové Zkratky 🔢",
         ['keybindsinfo'] = "Use",
         ['searchemotes'] = "~h~~y~ 🔍 Vyhledat animace",
         ['searchinputtitle'] = "Vyhledáno:",
@@ -59,6 +59,7 @@ Locales['cs'] = {
         ['btn_back'] = "Zpět",
         ['btn_switch'] = "Pohyb",
         ['btn_increment'] = "Increment",
+        ['btn_preview'] = "Náhled",
         ['dead'] = "Nemůžeš používat emoce, když jsi mrtvý!",
         ['swimming'] = "Nemůžeš používat emoce, když plaveš!",
         ['notvalidpet'] = "OOOh! Zjištěn nesprávný model peda! 🐕",
@@ -74,5 +75,4 @@ Locales['cs'] = {
         ['in_a_vehicle'] = "Tuto animaci lze přehrát pouze ve vozidle.",
         ['no_anim_crawling'] = "Při plazení nelze přehrávat animace",
         ['no_anim_right_now'] = "You can't play an animation right now",
-    
 }

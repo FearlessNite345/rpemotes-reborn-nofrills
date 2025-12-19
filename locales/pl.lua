@@ -1,10 +1,12 @@
-Locales['pl'] = {
+return {
  -- Polish 🇵🇱
         ['emotes'] = "~h~~p~ Animacje 🎬",
         ['danceemotes'] = "~h~~p~ 🕺 Tańce",
         ['animalemotes'] = "~h~~p~ 🐩 Animacje zwierząt",
         ['propemotes'] = "~h~~p~ 📦 Animacje z propami",
         ['prop2info'] = "❓ Animacje z propami są zlokalizowane na samym końcu listy",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "Ustaw (",
         ['newsetemote'] = "~w~ jest teraz Twoją przypisaną animacją, wciśnij ~g~CapsLock~w~ by jej użyć.",
         ['cancelemote'] = "~h~~r~ Anuluj animację 🚷",
@@ -12,8 +14,7 @@ Locales['pl'] = {
         ['walkingstyles'] = "~h~~p~ Style chodzenia 🚶🏻‍♂️",
         ['resetdef'] = "Zresetuj do ustawień domyślnych",
         ['normalreset'] = "~h~~r~ Normal (Reset)",
-        ['moods'] = "~h~~p~ Nastroje 😒",
-        ['infoupdate'] = "~h~~g~ Creditsy 🤝🏻",
+        ['moods'] = "~h~~p~ Nastroje 🎭",
         ['infoupdateav'] = "Informacje (aktualizacja dostępna)",
         ['infoupdateavtext'] = "Dostępna jest nowa aktualizacja, pobierz ją z: ~y~https://github.com/alberttheprince/rpemotes-reborn~w~",
         ['suggestions'] = "Masz sugestie?",
@@ -25,7 +26,6 @@ Locales['pl'] = {
         ['emotemenucmd'] = "Użyj komendy /emotemenu by otworzyć menu animacji.",
         ['shareemotes'] = "~h~~p~ 👫 Współdzielone animacje",
         ['shareemotesinfo'] = "Zaproś pobliską osobę do wspólnej animacji",
-        ['sharedanceemotes'] = "~h~~p~ 🕺 Współdzielone tańce",
         ['notvalidsharedemote'] = "nie jest poprawną współdzieloną animacją.",
         ['sentrequestto'] = "Wysyłasz prośbę do ~y~",
         ['nobodyclose'] = "Nie ma nikogo ~r~w pobliżu~w~.",
@@ -44,7 +44,7 @@ Locales['pl'] = {
         ['boundto'] = "Przypisz (~y~%s~w~) do ~g~%s~w~",
         ['currentlyboundemotes'] = " Aktualnie przypisane animacje:",
         ['notvalidkey'] = "nie jest poprawnym klawiszem.",
-        ['keybinds'] = "🔢 Przypisane klawisze",
+        ['keybinds'] = "Przypisane klawisze 🔢",
         ['keybindsinfo'] = "Użyj",
         ['searchemotes'] = "~h~~y~ 🔍 Szukaj animacji",
         ['searchinputtitle'] = "Szukaj:",
@@ -58,6 +58,7 @@ Locales['pl'] = {
         ['btn_back'] = "Wstecz",
         ['btn_switch'] = "Ruch",
         ['btn_increment'] = "Increment",
+        ['btn_preview'] = "Podgląd",
         ['dead'] = "You can't use emotes while dead!",
         ['swimming'] = "You can't use emotes while swimming",
         ['notvalidpet'] = "RUH ROH! Incorrect ped model detected 🐕!",
@@ -73,5 +74,4 @@ Locales['pl'] = {
         ['in_a_vehicle'] = "You can only play this animation while in a vehicle 🚷",
         ['no_anim_crawling'] = "You can't play animations while crawling",
         ['no_anim_right_now'] = "You can't play an animation right now",
-    
 }

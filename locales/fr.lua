@@ -1,10 +1,12 @@
-Locales['fr'] = {
+return {
  -- French 🇫🇷
         ['emotes'] = "~p~ Emotes 🎬",
         ['danceemotes'] = "~p~ 🕺 Danses",
         ['animalemotes'] = "~p~ 🐩 Emotes d'animaux",
         ['propemotes'] = "~p~ 📦 Emotes objet",
         ['prop2info'] = "❓ Les emotes d'objet peuvent être à la fin",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "Mettre (",
         ['newsetemote'] = "~w~ est maintenant votre emote favorite, appuyez sur ~g~CapsLock~w~ pour l'utiliser.",
         ['cancelemote'] = "~r~ Annuler l'émote 🚷",
@@ -12,8 +14,7 @@ Locales['fr'] = {
         ['walkingstyles'] = "~p~ Styles de marche 🚶🏻‍♂️",
         ['resetdef'] = "Réinitialiser aux valeurs par défaut",
         ['normalreset'] = "~h~~r~ Normal (réinitialiser)",
-        ['moods'] = "~p~ Humeurs 😒",
-        ['infoupdate'] = "Crédits 🤝🏻",
+        ['moods'] = "~p~ Humeurs 🎭",
         ['infoupdateav'] = "Information (Mise à jour disponible)",
         ['infoupdateavtext'] = "Une mise à jour est disponible ~y~https://github.com/alberttheprince/rpemotes-reborn~w~",
         ['suggestions'] = "Suggestions?",
@@ -25,7 +26,6 @@ Locales['fr'] = {
         ['emotemenucmd'] = "Fait /emotemenu pour ouvrir le menu",
         ['shareemotes'] = "👫 Emotes partagées",
         ['shareemotesinfo'] = "Invite une personne proche à faire une emote avec toi",
-        ['sharedanceemotes'] = "🕺 Dances partagées",
         ['notvalidsharedemote'] = "n'est pas un emote partagée valide.",
         ['sentrequestto'] = "Demande envoyée à <b>",
         ['nobodyclose'] = "Personne n'est assez proche.",
@@ -43,7 +43,7 @@ Locales['fr'] = {
         ['boundto'] = "Liée (%s) à %s",
         ['currentlyboundemotes'] = " Emotes actuellement liées:",
         ['notvalidkey'] = "n'est pas une clé valide.",
-        ['keybinds'] = "🔢 Raccourcis clavier",
+        ['keybinds'] = "Raccourcis clavier 🔢",
         ['keybindsinfo'] = "Utilise",
         ['searchemotes'] = "~h~~y~ 🔍 Rechercher des emotes",
         ['searchinputtitle'] = "Recherche:",
@@ -58,6 +58,7 @@ Locales['fr'] = {
         ['btn_back'] = "Retour",
         ['btn_switch'] = "Mouvement",
         ['btn_increment'] = "Vitesse déplacement",
+        ['btn_preview'] = "Aperçu",
         ['dead'] = "Vous ne pouvez pas faire d'animation en étant mort !",
         ['swimming'] = "Vous ne pouvez pas faire d'emotes en nageant",
         ['notvalidpet'] = "RUH ROH! Vous n'avez pas un ped adapté 🐕!",
@@ -74,5 +75,4 @@ Locales['fr'] = {
         ['no_anim_crawling'] = "Vous ne pouvez pas jouer d'animations pendant que vous rampez",
         ['no_anim_right_now'] = "Vous ne pouvez pas jouer une animation pour l'instant",
         ['register_cancel_emote'] = "Annuler l'émote actuelle",
-    
 }

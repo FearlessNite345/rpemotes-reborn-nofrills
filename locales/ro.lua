@@ -1,10 +1,12 @@
-Locales['ro'] = {
+return {
  -- Romanian 🇷🇴
         ['emotes'] = "~h~~p~ Emote-uri 🎬",
         ['danceemotes'] = "~h~~p~ 🕺 Dansuri",
         ['animalemotes'] = "~h~~p~ 🐩 Emote-uri pentru animale",
         ['propemotes'] = "~h~~p~ 📦 Prop Emote-uri",
         ['prop2info'] = "❓ Prop Emote-urile pot fi gasite la final",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "Seteaza (",
         ['newsetemote'] = "~w~ este acum emote-ul tau binduit, apasa ~g~CapsLock~w~ pentru a folosi.",
         ['cancelemote'] = "~h~~r~ Anuleaza animatia 🚷",
@@ -12,8 +14,7 @@ Locales['ro'] = {
         ['walkingstyles'] = "~h~~p~ Stiluri de mers 🚶🏻‍♂️",
         ['resetdef'] = "Reseteaza la default",
         ['normalreset'] = "~h~~r~ Normal (Reset)",
-        ['moods'] = "~h~~p~ Expresii 😒",
-        ['infoupdate'] = "~h~~g~ Credits 🤝🏻",
+        ['moods'] = "~h~~p~ Expresii 🎭",
         ['infoupdateav'] = "Informatii",
         ['infoupdateavtext'] = "Credits: See our read me for credits!",
         ['suggestions'] = "Sugestii?",
@@ -25,7 +26,6 @@ Locales['ro'] = {
         ['emotemenucmd'] = "Foloseste comanda /emotemenu pentru a deschide meniul de animatii.",
         ['shareemotes'] = "👫 Shared Emotes",
         ['shareemotesinfo'] = "Invita persoana de langa tine",
-        ['sharedanceemotes'] = "🕺 Shared Dances",
         ['notvalidsharedemote'] = "nu este un emote shared valid.",
         ['sentrequestto'] = "Am trimis propunerea catre ~y~",
         ['nobodyclose'] = "Nu este nici o persoana ~r~langa tine~w~.",
@@ -44,7 +44,7 @@ Locales['ro'] = {
         ['boundto'] = "Binduite (~y~%s~w~) la ~g~%s~w~",
         ['currentlyboundemotes'] = " Emote-uri prezent binduite:",
         ['notvalidkey'] = "nu este o tasta valida.",
-        ['keybinds'] = "🔢 Bind-uri",
+        ['keybinds'] = "Bind-uri 🔢",
         ['keybindsinfo'] = "Foloseste",
         ['searchemotes'] = "~h~~y~ 🔍 Cautare Emote-uri",
         ['searchinputtitle'] = "Cautare:",
@@ -59,6 +59,7 @@ Locales['ro'] = {
         ['btn_back'] = "Înapoi",
         ['btn_switch'] = "Mișcare",
         ['btn_increment'] = "Increment",
+        ['btn_preview'] = "Previzualizare",
         ['dead'] = "You can't use emotes while dead!",
         ['swimming'] = "You can't use emotes while swimming",
         ['notvalidpet'] = "RUH ROH! Incorrect ped model detected 🐕!",
@@ -74,5 +75,4 @@ Locales['ro'] = {
         ['in_a_vehicle'] = "You can only play this animation while in a vehicle 🚷",
         ['no_anim_crawling'] = "You can't play animations while crawling",
         ['no_anim_right_now'] = "You can't play an animation right now",
-    
 }

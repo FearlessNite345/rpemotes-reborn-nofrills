@@ -1,10 +1,12 @@
-Locales['no'] = {
+return {
  -- Norwegian 🇳🇴
         ['emotes'] = " ~h~~p~Animasjoner 🎬",
         ['danceemotes'] = "~h~~p~ 🕺 Danse Animasjoner",
         ['animalemotes'] = "~h~~p~ 🐩 Dyreanimasjoner",
         ['propemotes'] = "~h~~p~ 📦 Rekvisitt Animasjoner",
         ['prop2info'] = "❓ Rekvisitt Animasjoner er på bunnen",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "Vil du sette (",
         ['newsetemote'] = "~w~ er nå lagret som din favoritt, trykk ~g~CapsLock~w~ for å bruke den.",
         ['cancelemote'] = "~h~~r~ Avbryt Animasjonen 🚷",
@@ -12,8 +14,7 @@ Locales['no'] = {
         ['walkingstyles'] = "~h~~p~ Gangart 🚶🏻‍♂️",
         ['resetdef'] = "Reset til standard",
         ['normalreset'] = "~h~~r~ Normal (Reset)",
-        ['moods'] = "~h~~p~ Ansiktsuttrykk 😒",
-        ['infoupdate'] = "~h~~g~ Anerkjennelser 🤝🏻",
+        ['moods'] = "~h~~p~ Ansiktsuttrykk 🎭",
         ['infoupdateav'] = "Informasjon (Oppdatering tilgjengelig)",
         ['infoupdateavtext'] = "En oppdatering er tilgjengelig, du finner den nyeste versjonen her: ~y~https://github.com/alberttheprince/rpemotes-reborn~w~",
         ['suggestions'] = "Forslag?",
@@ -25,7 +26,6 @@ Locales['no'] = {
         ['emotemenucmd'] = "Use command /emotemenu to open animations menu.",
         ['shareemotes'] = "~h~~p~ 👫 Felles Animasjoner",
         ['shareemotesinfo'] = "Inviter den nærmeste personen til en felles animasjon",
-        ['sharedanceemotes'] = "~h~~p~ 🕺 Felles Danser",
         ['notvalidsharedemote'] = "er ikke en gyldig felles animasjon.",
         ['sentrequestto'] = "Sendte en forespørsel til ~y~",
         ['nobodyclose'] = "Ingen ~r~personer~w~ er i nærheten.",
@@ -44,7 +44,7 @@ Locales['no'] = {
         ['boundto'] = "Du har bundet (~y~%s~w~) til ~g~%s~w~",
         ['currentlyboundemotes'] = " Dine bundne animasjoner:",
         ['notvalidkey'] = "er ikke en gyldig tast.",
-        ['keybinds'] = "🔢 Hurtigtaster",
+        ['keybinds'] = "Hurtigtaster 🔢",
         ['keybindsinfo'] = "Bruk",
         ['searchemotes'] = "~h~~y~ 🔍 Søk for Animasjoner",
         ['searchinputtitle'] = "Søk:",
@@ -59,6 +59,7 @@ Locales['no'] = {
         ['btn_back'] = "Tilbake",
         ['btn_switch'] = "Bevegelse",
         ['btn_increment'] = "Increment",
+        ['btn_preview'] = "Forhåndsvisning",
         ['dead'] = "Du kan ikke starte animasjoner mens du er død!",
         ['swimming'] = "Du kan ikke bruke animasjoner mens du svømmer",
         ['notvalidpet'] = "RUH ROH! Denne animasjonen er ikke laget for denne peden! 🐕",
@@ -74,5 +75,4 @@ Locales['no'] = {
         ['in_a_vehicle'] = "Du kan kun bruke denne animasjonen menst du er i et kjøretøy",
         ['no_anim_crawling'] = "Du kan ikke starte animasjoner mens du kryper",
         ['no_anim_right_now'] = "You can't play an animation right now",
-    
 }

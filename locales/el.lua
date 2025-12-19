@@ -1,10 +1,12 @@
-Locales['el'] = {
+return {
  -- Greek 🇬🇷
         ['emotes'] = '~h~~p~ Κινήσεις 🎬',
         ['danceemotes'] = "~h~~p~ 🕺 Χοροί",
         ['animalemotes'] = "~h~~p~ 🐩 Ζώα",
         ['propemotes'] = "~h~~p~ 📦 Αντικείμενα",
         ['prop2info'] = "❓ Τα αντικείμενα βρίσκοντε στο τέλος",
+        ['emojis'] = 'Emojis 😀',
+        ['emojisdescription'] = 'Express yourself with emojis',
         ['set'] = "Set (",
         ['newsetemote'] = "~w~ είναι τώρα στα αγαπημένα σου, πάτησε ~g~CapsLock~w~ για να την χρησιμοποιήσεις.",
         ['cancelemote'] = "~h~~r~ Ακύρωση Κίνησης 🚷",
@@ -12,8 +14,7 @@ Locales['el'] = {
         ['walkingstyles'] = "~h~~p~ Είδη Περπατήματος 🚶🏻‍♂️",
         ['resetdef'] = "~h~~y~ Επαναφορα αρχικών ρυθμίσεων",
         ['normalreset'] = "~h~~r~ Κανονική (Αρχική)",
-        ['moods'] = "~h~~p~ Διαθέσεις 😒",
-        ['infoupdate'] = "~h~~g~ Ευχαριστήρια 🤝🏻",
+        ['moods'] = "~h~~p~ Διαθέσεις 🎭",
         ['infoupdateav'] = "Πληροφορίες (Νέα έκδοση διαθέσιμη!)",
         ['infoupdateavtext'] = "Υπάρχει νέα έκδοση διαθέσιμη, κατέβασέτην από εδώ ~y~https://github.com/alberttheprince/rpemotes-reborn~w~",
         ['suggestions'] = "Προτάσεις?",
@@ -25,7 +26,6 @@ Locales['el'] = {
         ['emotemenucmd'] = "Χρησιμοποίησε την εντολή /emotemenu για να ανοίξεις το μενού κινήσεων.",
         ['shareemotes'] = "~h~~p~ 👫 Κινήσεις Με Άλλους Παίκτες",
         ['shareemotesinfo'] = "Προσκάλεσε τον κοντινότερο παίκτη για να κάνετε μια κίνηση",
-        ['sharedanceemotes'] = "~h~~p~ 🕺 Χοροί Με Άλλους Παίκτες",
         ['notvalidsharedemote'] = "δεν είναι διαθέσιμη κίνηση για να κάνεις με άλλον παίκτη.",
         ['sentrequestto'] = "Στείλε αίτημα σε ~y~",
         ['nobodyclose'] = "Κανείς ~r~κοντα~w~ σου.",
@@ -44,7 +44,7 @@ Locales['el'] = {
         ['bound'] = "Σύνδεση  (%s) στο  %s",
         ['currentlyboundemotes'] = " Τωρινές συντομεύσεις κινήσεων:",
         ['notvalidkey'] = "δεν είναι σωστό κουμπί.",
-        ['keybinds'] = "🔢 Συντομεύσεις Πλήκτρων",
+        ['keybinds'] = "Συντομεύσεις Πλήκτρων 🔢",
         ['keybindsinfo'] = "Χρήση",
         ['searchemotes'] = "~h~~y~ 🔍 Αναζήτηση Κινήσεων",
         ['searchinputtitle'] = "Αναζήτηση:",
@@ -59,6 +59,7 @@ Locales['el'] = {
         ['btn_back'] = "Πίσω",
         ['btn_switch'] = "Κίνηση",
         ['btn_increment'] = "Ταχύτητα Κίνησης",
+        ['btn_preview'] = "Προεπισκόπηση",
         ['dead'] = "Δεν μπορείς να κάνεις κάποια κίνηση ενώ έχεις πεθάνει!",
         ['swimming'] = "Δεν μπορείς να κάνεις κάποια κίνηση ενώ κολυμπάς",
         ['notvalidpet'] = "RUH ROH! Λάθος ped model, δεν μπορεί να κάνει κινήσεις ο χαρακτήρας σου 🐕!",
@@ -74,5 +75,4 @@ Locales['el'] = {
         ['in_a_vehicle'] = "Μπορείς να κάνεις αυτή τη κίνηση μόνο ενώ είσαι σε όχημα 🚷",
         ['no_anim_crawling'] = "Δεν μπορείς να κάνεις κάποια κίνηση ενώ σέρνεσαι",
         ['no_anim_right_now'] = "You can't play an animation right now",
-
 }
