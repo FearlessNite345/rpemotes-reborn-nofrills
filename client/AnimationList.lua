@@ -1,4 +1,4 @@
--- ALL custom animations added to this repository were added with express permission from the creators and do not contain any paid content --
+﻿-- ALL custom animations added to this repository were added with express permission from the creators and do not contain any paid content --
 -- If an emote does not work, you may be on an older gamebuild --
 -- To get a higher gamebuild, see ReadMe on github repository --
 
@@ -2846,258 +2846,6 @@ RP.Dances = {
             onFootFlag = AnimFlag.LOOP,
         }
     },
-    ["dancepride"] = {
-        "anim@amb@nightclub@lazlow@hi_railing@",
-        "ambclub_09_mi_hi_bellydancer_laz",
-        "Dance Pride A",
-        AnimationOptions = {
-            Prop = 'lilprideflag1', -- Rainbow
-            PropBone = 18905,
-            PropPlacement = {
-                0.0900,
-                0.0000,
-                0.0300,
-                -39.911,
-                93.9166,
-                -5.8062
-            },
-            SecondProp = 'lilprideflag1',
-            SecondPropBone = 57005,
-            SecondPropPlacement = {
-                0.0900,
-                -0.0200,
-                -0.0300,
-                -90.2454,
-                5.7068,
-                -28.7797
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["danceprideb"] = {
-        "anim@amb@nightclub@lazlow@hi_railing@",
-        "ambclub_09_mi_hi_bellydancer_laz",
-        "Dance Pride B - LGBTQIA",
-        AnimationOptions = {
-            Prop = 'lilprideflag2', -- LGBTQIA
-            PropBone = 18905,
-            PropPlacement = {
-                0.0900,
-                0.0000,
-                0.0300,
-                -39.911,
-                93.9166,
-                -5.8062
-            },
-            SecondProp = 'lilprideflag2',
-            SecondPropBone = 57005,
-            SecondPropPlacement = {
-                0.0900,
-                -0.0200,
-                -0.0300,
-                -90.2454,
-                5.7068,
-                -28.7797
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["dancepridea"] = {
-        "anim@amb@nightclub@lazlow@hi_railing@",
-        "ambclub_09_mi_hi_bellydancer_laz",
-        "Dance Pride A - Bisexual",
-        AnimationOptions = {
-            Prop = 'lilprideflag3', -- Bisexual
-            PropBone = 18905,
-            PropPlacement = {
-                0.0900,
-                0.0000,
-                0.0300,
-                -39.911,
-                93.9166,
-                -5.8062
-            },
-            SecondProp = 'lilprideflag3',
-            SecondPropBone = 57005,
-            SecondPropPlacement = {
-                0.0900,
-                -0.0200,
-                -0.0300,
-                -90.2454,
-                5.7068,
-                -28.7797
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["dancepridec"] = {
-        "anim@amb@nightclub@lazlow@hi_railing@",
-        "ambclub_09_mi_hi_bellydancer_laz",
-        "Dance Pride C - Lesbian",
-        AnimationOptions = {
-            Prop = 'lilprideflag4', -- Lesbian
-            PropBone = 18905,
-            PropPlacement = {
-                0.0900,
-                0.0000,
-                0.0300,
-                -39.911,
-                93.9166,
-                -5.8062
-            },
-            SecondProp = 'lilprideflag4',
-            SecondPropBone = 57005,
-            SecondPropPlacement = {
-                0.0900,
-                -0.0200,
-                -0.0300,
-                -90.2454,
-                5.7068,
-                -28.7797
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["danceprided"] = {
-        "anim@amb@nightclub@lazlow@hi_railing@",
-        "ambclub_09_mi_hi_bellydancer_laz",
-        "Dance Pride D - Pansexual",
-        AnimationOptions = {
-            Prop = 'lilprideflag5', -- Pansexual
-            PropBone = 18905,
-            PropPlacement = {
-                0.0900,
-                0.0000,
-                0.0300,
-                -39.911,
-                93.9166,
-                -5.8062
-            },
-            SecondProp = 'lilprideflag5',
-            SecondPropBone = 57005,
-            SecondPropPlacement = {
-                0.0900,
-                -0.0200,
-                -0.0300,
-                -90.2454,
-                5.7068,
-                -28.7797
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["dancepridee"] = {
-        "anim@amb@nightclub@lazlow@hi_railing@",
-        "ambclub_09_mi_hi_bellydancer_laz",
-        "Dance Pride E - Transgender",
-        AnimationOptions = {
-            Prop = 'lilprideflag6', -- Transgender
-            PropBone = 18905,
-            PropPlacement = {
-                0.0900,
-                0.0000,
-                0.0300,
-                -39.911,
-                93.9166,
-                -5.8062
-            },
-            SecondProp = 'lilprideflag6',
-            SecondPropBone = 57005,
-            SecondPropPlacement = {
-                0.0900,
-                -0.0200,
-                -0.0300,
-                -90.2454,
-                5.7068,
-                -28.7797
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["dancepridef"] = {
-        "anim@amb@nightclub@lazlow@hi_railing@",
-        "ambclub_09_mi_hi_bellydancer_laz",
-        "Dance Pride F - Non Binary",
-        AnimationOptions = {
-            Prop = 'lilprideflag7', -- Lesbian
-            PropBone = 18905,
-            PropPlacement = {
-                0.0900,
-                0.0000,
-                0.0300,
-                -39.911,
-                93.9166,
-                -5.8062
-            },
-            SecondProp = 'lilprideflag7',
-            SecondPropBone = 57005,
-            SecondPropPlacement = {
-                0.0900,
-                -0.0200,
-                -0.0300,
-                -90.2454,
-                5.7068,
-                -28.7797
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["danceprideg"] = {
-        "anim@amb@nightclub@lazlow@hi_railing@",
-        "ambclub_09_mi_hi_bellydancer_laz",
-        "Dance Pride G - Asexual",
-        AnimationOptions = {
-            Prop = 'lilprideflag8', -- Asexual
-            PropBone = 18905,
-            PropPlacement = {
-                0.0900,
-                0.0000,
-                0.0300,
-                -39.911,
-                93.9166,
-                -5.8062
-            },
-            SecondProp = 'lilprideflag8',
-            SecondPropBone = 57005,
-            SecondPropPlacement = {
-                0.0900,
-                -0.0200,
-                -0.0300,
-                -90.2454,
-                5.7068,
-                -28.7797
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["danceprideh"] = {
-        "anim@amb@nightclub@lazlow@hi_railing@",
-        "ambclub_09_mi_hi_bellydancer_laz",
-        "Dance Pride H - Straight Ally",
-        AnimationOptions = {
-            Prop = 'lilprideflag9', -- Straight Ally
-            PropBone = 18905,
-            PropPlacement = {
-                0.0900,
-                0.0000,
-                0.0300,
-                -39.911,
-                93.9166,
-                -5.8062
-            },
-            SecondProp = 'lilprideflag9',
-            SecondPropBone = 57005,
-            SecondPropPlacement = {
-                0.0900,
-                -0.0200,
-                -0.0300,
-                -90.2454,
-                5.7068,
-                -28.7797
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
     ["technodance"] = {
         "anim@amb@nightclub@mini@dance@dance_solo@techno_karate@",
         "high_left_up",
@@ -3386,267 +3134,6 @@ RP.AnimalEmotes = {
             ExitEmote = "bdogup",
         }
     },
-    ["bdogpridea"] = {
-        "creatures@rottweiler@amb@world_dog_sitting@base",
-        "base",
-        "Sit Pride A (big dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag1', -- Rainbow
-            PropBone = 31086,
-            PropPlacement = {
-                0.1900,
-                0.0000,
-                -0.0500,
-                100.0000,
-                90.0000,
-                0.0000
-            },
-            SecondProp = 'lilprideflag1',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.1940,
-                0.020,
-                -0.0500,
-                -90.0000,
-                -90.0000,
-                0.0000
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "bdogup",
-        }
-    },
-    ["bdogprideb"] = {
-        "creatures@rottweiler@amb@world_dog_sitting@base",
-        "base",
-        "Sit Pride B - LGBTQIA (big dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag2', -- LGBTQIA
-            PropBone = 31086,
-            PropPlacement = {
-                0.1900,
-                0.0000,
-                -0.0500,
-                100.0000,
-                90.0000,
-                0.0000
-            },
-            SecondProp = 'lilprideflag2',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.1940,
-                0.020,
-                -0.0500,
-                -90.0000,
-                -90.0000,
-                0.0000
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "bdogup",
-        }
-    },
-    ["bdogpridec"] = {
-        "creatures@rottweiler@amb@world_dog_sitting@base",
-        "base",
-        "Sit Pride C - Bisexual (big dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag3', -- Bisexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1900,
-                0.0000,
-                -0.0500,
-                100.0000,
-                90.0000,
-                0.0000
-            },
-            SecondProp = 'lilprideflag3',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.1940,
-                0.020,
-                -0.0500,
-                -90.0000,
-                -90.0000,
-                0.0000
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "bdogup",
-        }
-    },
-    ["bdogprided"] = {
-        "creatures@rottweiler@amb@world_dog_sitting@base",
-        "base",
-        "Sit Pride D - Lesbian (big dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag4', -- Lesbian
-            PropBone = 31086,
-            PropPlacement = {
-                0.1900,
-                0.0000,
-                -0.0500,
-                100.0000,
-                90.0000,
-                0.0000
-            },
-            SecondProp = 'lilprideflag4',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.1940,
-                0.020,
-                -0.0500,
-                -90.0000,
-                -90.0000,
-                0.0000
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "bdogup",
-        }
-    },
-    ["bdogpridee"] = {
-        "creatures@rottweiler@amb@world_dog_sitting@base",
-        "base",
-        "Sit Pride E - Pansexual (big dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag5', -- Pansexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1900,
-                0.0000,
-                -0.0500,
-                100.0000,
-                90.0000,
-                0.0000
-            },
-            SecondProp = 'lilprideflag5',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.1940,
-                0.020,
-                -0.0500,
-                -90.0000,
-                -90.0000,
-                0.0000
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "bdogup",
-        }
-    },
-    ["bdogpridef"] = {
-        "creatures@rottweiler@amb@world_dog_sitting@base",
-        "base",
-        "Sit Pride F - Transgender  (big dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag6', -- Transgender
-            PropBone = 31086,
-            PropPlacement = {
-                0.1900,
-                0.0000,
-                -0.0500,
-                100.0000,
-                90.0000,
-                0.0000
-            },
-            SecondProp = 'lilprideflag6',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.1940,
-                0.020,
-                -0.0500,
-                -90.0000,
-                -90.0000,
-                0.0000
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "bdogup",
-        }
-    },
-    ["bdogprideg"] = {
-        "creatures@rottweiler@amb@world_dog_sitting@base",
-        "base",
-        "Sit Pride G - Non Binary (big dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag7', -- Non Binary
-            PropBone = 31086,
-            PropPlacement = {
-                0.1900,
-                0.0000,
-                -0.0500,
-                100.0000,
-                90.0000,
-                0.0000
-            },
-            SecondProp = 'lilprideflag7',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.1940,
-                0.020,
-                -0.0500,
-                -90.0000,
-                -90.0000,
-                0.0000
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "bdogup",
-        }
-    },
-    ["bdogprideh"] = {
-        "creatures@rottweiler@amb@world_dog_sitting@base",
-        "base",
-        "Sit Pride H - Asexual (big dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag8', -- Asexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1900,
-                0.0000,
-                -0.0500,
-                100.0000,
-                90.0000,
-                0.0000
-            },
-            SecondProp = 'lilprideflag8',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.1940,
-                0.020,
-                -0.0500,
-                -90.0000,
-                -90.0000,
-                0.0000
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "bdogup",
-        }
-    },
-    ["bdogpridei"] = {
-        "creatures@rottweiler@amb@world_dog_sitting@base",
-        "base",
-        "Sit Pride I - Straight Ally (big dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag9', -- Straight Ally
-            PropBone = 31086,
-            PropPlacement = {
-                0.1900,
-                0.0000,
-                -0.0500,
-                100.0000,
-                90.0000,
-                0.0000
-            },
-            SecondProp = 'lilprideflag9',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.1940,
-                0.020,
-                -0.0500,
-                -90.0000,
-                -90.0000,
-                0.0000
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "bdogup",
-        }
-    },
     ["bdogfw"] = {
         "creatures@rottweiler@amb@world_dog_sitting@base",
         "nill",
@@ -3783,258 +3270,6 @@ RP.AnimalEmotes = {
                 0.0,
                 0.0,
                 0.0
-            },
-            SecondProp = 'prop_cs_sol_glasses',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.0500,
-                0.0300,
-                0.000,
-                -100.0000003,
-                90.00,
-                0.00
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogdancepridea"] = {
-        "creatures@pug@move",
-        "idle_turn_0",
-        "Dance Pride A (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag1',
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            SecondProp = 'prop_cs_sol_glasses',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.0500,
-                0.0300,
-                0.000,
-                -100.0000003,
-                90.00,
-                0.00
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogdanceprideb"] = {
-        "creatures@pug@move",
-        "idle_turn_0",
-        "Dance Pride B - LGBTQIA (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag2', -- LGBTQIA
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            SecondProp = 'prop_cs_sol_glasses',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.0500,
-                0.0300,
-                0.000,
-                -100.0000003,
-                90.00,
-                0.00
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogdancepridec"] = {
-        "creatures@pug@move",
-        "idle_turn_0",
-        "Dance Pride C - Bisexual (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag3', -- Bisexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            SecondProp = 'prop_cs_sol_glasses',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.0500,
-                0.0300,
-                0.000,
-                -100.0000003,
-                90.00,
-                0.00
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogdanceprided"] = {
-        "creatures@pug@move",
-        "idle_turn_0",
-        "Dance Pride D - Lesbian (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag4', -- Lesbian
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            SecondProp = 'prop_cs_sol_glasses',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.0500,
-                0.0300,
-                0.000,
-                -100.0000003,
-                90.00,
-                0.00
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogdancepridee"] = {
-        "creatures@pug@move",
-        "idle_turn_0",
-        "Dance Pride E - Pansexual (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag5', -- Pansexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            SecondProp = 'prop_cs_sol_glasses',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.0500,
-                0.0300,
-                0.000,
-                -100.0000003,
-                90.00,
-                0.00
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogdancepridef"] = {
-        "creatures@pug@move",
-        "idle_turn_0",
-        "Dance Pride F - Transgender  (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag6', -- Transgender
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            SecondProp = 'prop_cs_sol_glasses',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.0500,
-                0.0300,
-                0.000,
-                -100.0000003,
-                90.00,
-                0.00
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogdanceprideg"] = {
-        "creatures@pug@move",
-        "idle_turn_0",
-        "Dance Pride G - Non Binary (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag7', -- Non Binary
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            SecondProp = 'prop_cs_sol_glasses',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.0500,
-                0.0300,
-                0.000,
-                -100.0000003,
-                90.00,
-                0.00
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogdanceprideh"] = {
-        "creatures@pug@move",
-        "idle_turn_0",
-        "Dance Pride H - Asexual (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag8', -- Asexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            SecondProp = 'prop_cs_sol_glasses',
-            SecondPropBone = 31086,
-            SecondPropPlacement = {
-                0.0500,
-                0.0300,
-                0.000,
-                -100.0000003,
-                90.00,
-                0.00
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogdancepridei"] = {
-        "creatures@pug@move",
-        "idle_turn_0",
-        "Dance Pride I - Straight Ally (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag9', -- Straight Ally
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
             },
             SecondProp = 'prop_cs_sol_glasses',
             SecondPropBone = 31086,
@@ -4605,340 +3840,6 @@ RP.AnimalEmotes = {
                 90.00,
                 0.00,
                 0.00
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "sdogup",
-        }
-    },
-    ["sdogpridea"] = {
-        "creatures@pug@move",
-        "nill",
-        "Pride A (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag1',
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogprideb"] = {
-        "creatures@pug@move",
-        "nill",
-        "Pride B - LGBTQIA (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag2', -- LGBTQIA
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogpridec"] = {
-        "creatures@pug@move",
-        "nill",
-        "Pride C - Bisexual (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag3', -- Bisexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogprided"] = {
-        "creatures@pug@move",
-        "nill",
-        "Pride D - Lesbian (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag4', -- Lesbian
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogpridee"] = {
-        "creatures@pug@move",
-        "nill",
-        "Pride E - Pansexual (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag5', -- Pansexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogpridef"] = {
-        "creatures@pug@move",
-        "nill",
-        "Pride F - Transgender  (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag6', -- Transgender
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogprideg"] = {
-        "creatures@pug@move",
-        "nill",
-        "Pride G - Non Binary (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag6', -- Non Binary
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogprideh"] = {
-        "creatures@pug@move",
-        "nill",
-        "Pride H - Non Binary (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag7', -- Non Binary
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogpridei"] = {
-        "creatures@pug@move",
-        "nill",
-        "Pride I - Asexual (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag8', -- Asexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-        }
-    },
-    ["sdogpridesita"] = {
-        "creatures@pug@amb@world_dog_sitting@idle_a",
-        "idle_b",
-        "Pride A Sit (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag1',
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "sdogup",
-        }
-    },
-    ["sdogpridesitb"] = {
-        "creatures@pug@amb@world_dog_sitting@idle_a",
-        "idle_b",
-        "Pride B Sit LGBTQIA  (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag2', -- LGBTQIA
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "sdogup",
-        }
-    },
-    ["sdogpridesitc"] = {
-        "creatures@pug@amb@world_dog_sitting@idle_a",
-        "idle_b",
-        "Pride C Sit Bisexual  (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag3', -- Bisexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "sdogup",
-        }
-    },
-    ["sdogpridesitd"] = {
-        "creatures@pug@amb@world_dog_sitting@idle_a",
-        "idle_b",
-        "Pride D Sit Lesbian (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag4', -- Lesbian
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "sdogup",
-        }
-    },
-    ["sdogpridesite"] = {
-        "creatures@pug@amb@world_dog_sitting@idle_a",
-        "idle_b",
-        "Pride E Sit Pansexual  (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag5', -- Pansexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "sdogup",
-        }
-    },
-    ["sdogpridesitf"] = {
-        "creatures@pug@amb@world_dog_sitting@idle_a",
-        "idle_b",
-        "Pride F Sit Transgender   (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag6', -- Transgender
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "sdogup",
-        }
-    },
-    ["sdogpridesitg"] = {
-        "creatures@pug@amb@world_dog_sitting@idle_a",
-        "idle_b",
-        "Pride G Sit Non Binary (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag7', -- Non Binary
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "sdogup",
-        }
-    },
-    ["sdogpridesith"] = {
-        "creatures@pug@amb@world_dog_sitting@idle_a",
-        "idle_b",
-        "Pride H Sit Asexual  (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag8',
-            -- Asexual
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "sdogup",
-        }
-    },
-    ["sdogpridesiti"] = {
-        "creatures@pug@amb@world_dog_sitting@idle_a",
-        "idle_b",
-        "Pride I Sit Straight Ally  (small dog)",
-        AnimationOptions = {
-            Prop = 'lilprideflag9', -- Straight Ally
-            PropBone = 31086,
-            PropPlacement = {
-                0.1240,
-                -0.0080,
-                0.000,
-                0.0,
-                0.0,
-                -74.6999
             },
             onFootFlag = AnimFlag.LOOP,
             ExitEmote = "sdogup",
@@ -5607,7 +4508,7 @@ RP.Emotes = {
             ExitEmote = "breakfreeback",
         }
     },
-    ["dazzle1"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["dazzle1"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@dazzleme",
         "pose1_clip",
         "Dazzle Me Pose 1",
@@ -5615,7 +4516,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["dazzle2"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["dazzle2"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@dazzleme",
         "pose2_clip",
         "Dazzle Me Pose 2",
@@ -5623,7 +4524,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["dazzle3"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["dazzle3"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@dazzleme",
         "pose3_clip",
         "Dazzle Me Pose 3",
@@ -5631,7 +4532,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["dazzle4"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["dazzle4"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@dazzleme",
         "pose4_clip",
         "Dazzle Me Pose 4",
@@ -5639,7 +4540,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["dazzle5"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["dazzle5"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@dazzleme",
         "pose5_clip",
         "Dazzle Me Pose 5",
@@ -5647,7 +4548,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["dazzle6"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["dazzle6"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@dazzleme",
         "pose6_clip",
         "Dazzle Me Pose 6",
@@ -5655,7 +4556,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["dazzle7"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["dazzle7"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@dazzleme",
         "pose7_clip",
         "Dazzle Me Pose 7",
@@ -5780,7 +4681,7 @@ RP.Emotes = {
             ExitEmote = "getup",
         }
     },
-    ["fashionpose1"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["fashionpose1"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyxco@dresstoimpress",
         "chic",
         "Fashion Pose Pose 1",
@@ -5788,7 +4689,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["fashionpose2"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["fashionpose2"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyxco@dresstoimpress",
         "deathdrop",
         "Fashion Pose Pose 2",
@@ -5797,7 +4698,7 @@ RP.Emotes = {
             ExitEmote = "standup",
         }
     },
-	["fashionpose3"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["fashionpose3"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyxco@dresstoimpress",
         "magica",
         "Fashion Pose Pose 3",
@@ -5805,7 +4706,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["fashionpose4"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["fashionpose4"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyxco@dresstoimpress",
         "pose5",
         "Fashion Pose Pose 4",
@@ -5813,7 +4714,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["fashionpose5"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["fashionpose5"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyxco@dresstoimpress",
         "pose8",
         "Fashion Pose Pose 5",
@@ -5821,7 +4722,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["fashionpose6"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["fashionpose6"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyxco@dresstoimpress",
         "pose20",
         "Fashion Pose Pose 6",
@@ -5829,7 +4730,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["fashionpose7"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["fashionpose7"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyxco@dresstoimpress",
         "pose28",
         "Fashion Pose Pose 7",
@@ -5837,7 +4738,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["fashionpose8"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["fashionpose8"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyxco@dresstoimpress",
         "runoutofposes",
         "Fashion Pose Pose 8",
@@ -5845,7 +4746,7 @@ RP.Emotes = {
             onFootFlag = AnimFlag.LOOP
         }
     },
-	["fashionpose9"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+	["fashionpose9"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyxco@dresstoimpress",
         "split",
         "Fashion Pose Pose 9",
@@ -9230,7 +8131,7 @@ RP.Emotes = {
     ["checkcar"] = {
         "anim@amb@carmeet@checkout_car@male_a@idles",
         "idle_b",
-        "Check Out · Female",
+        "Check Out Â· Female",
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP
         }
@@ -9238,7 +8139,7 @@ RP.Emotes = {
     ["checkcar2"] = {
         "anim@amb@carmeet@checkout_car@male_c@idles",
         "idle_a",
-        "Check Out 2 · Male",
+        "Check Out 2 Â· Male",
         AnimationOptions = {
             onFootFlag = AnimFlag.LOOP
         }
@@ -10363,7 +9264,7 @@ RP.Emotes = {
     ["aslyes"] = {
         "ebrwny_sign",
         "ebrwny_yes",
-        "ASL Yes 🇺🇸",
+        "ASL Yes ðŸ‡ºðŸ‡¸",
         AnimationOptions = {
             onFootFlag = AnimFlag.MOVING,
             EmoteDuration = 1030
@@ -10372,7 +9273,7 @@ RP.Emotes = {
     ["aslno"] = {
         "ebrwny_sign",
         "ebrwny_no",
-        "ASL No 🇺🇸",
+        "ASL No ðŸ‡ºðŸ‡¸",
         AnimationOptions = {
             onFootFlag = AnimFlag.MOVING,
             EmoteDuration = 2080
@@ -10381,7 +9282,7 @@ RP.Emotes = {
     ["aslimgood"] = {
         "ebrwny_sign",
         "ebrwny_imgood",
-        "ASL I Am Good 🇺🇸",
+        "ASL I Am Good ðŸ‡ºðŸ‡¸",
         AnimationOptions = {
             onFootFlag = AnimFlag.MOVING,
             EmoteDuration = 3940
@@ -10390,7 +9291,7 @@ RP.Emotes = {
     ["aslcya"] = {
         "ebrwny_sign",
         "ebrwny_seeya",
-        "ASL See Ya 🇺🇸",
+        "ASL See Ya ðŸ‡ºðŸ‡¸",
         AnimationOptions = {
             onFootFlag = AnimFlag.MOVING,
             EmoteDuration = 1200
@@ -10399,7 +9300,7 @@ RP.Emotes = {
     ["aslwhat"] = {
         "ebrwny_sign",
         "ebrwny_what",
-        "ASL What 🇺🇸",
+        "ASL What ðŸ‡ºðŸ‡¸",
         AnimationOptions = {
             onFootFlag = AnimFlag.MOVING,
             EmoteDuration = 1480
@@ -11542,24 +10443,6 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING
         }
     },
-    ["cake6"] = {
-        "anim@heists@box_carry@",
-        "idle",
-        "Pride Cake",
-        AnimationOptions = { -- Custom Prop By PataMods
-            Prop = 'pata_cake2',
-            PropBone = 28422,
-            PropPlacement = {
-                0.0,
-               -0.0700,
-               -0.0400,
-               10.0000,
-                0.0000,
-                0.0000
-            },
-            onFootFlag = AnimFlag.MOVING
-        }
-    },
     ["cake7"] = { -- Custom Prop By PataMods
         "anim@heists@box_carry@",
         "idle",
@@ -11664,24 +10547,6 @@ RP.PropEmotes = {
                 0.0,
                 0.0,
                30.0
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ["cakew6"] = {
-        "anim@move_f@waitress",
-        "idle",
-        "Cake Waiter - Pride",
-        AnimationOptions = {
-            Prop = "pata_cake2",
-            PropBone = 28422,
-            PropPlacement = {
-                0.0000,
-                0.0000,
-                0.1100,
-                0.0,
-                0.0,
-               20.0
             },
             onFootFlag = AnimFlag.MOVING,
         }
@@ -11862,24 +10727,6 @@ RP.PropEmotes = {
              -157.2041,
              -101.1702,
               28.0243
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ["balloon2"] = {
-        "anim@heists@humane_labs@finale@keycards",
-        "ped_a_enter_loop",
-        "Balloon 2 - Pride",
-        AnimationOptions = {
-            Prop = "pride_heart_balloon",
-            PropBone = 60309,
-            PropPlacement = {
-                1.0600,
-                0.4900,
-                0.0140,
-               73.5103,
-              -30.9638,
-               19.3946
             },
             onFootFlag = AnimFlag.MOVING,
         }
@@ -13727,7 +12574,7 @@ RP.PropEmotes = {
     ["pizzaslice"] = { -- Custom Prop by knjgh
         "mp_player_inteat@burger",
         "mp_player_int_eat_burger",
-        "Pizza Slice - Jalapeño And Peperoni",
+        "Pizza Slice - JalapeÃ±o And Peperoni",
         AnimationOptions = {
             Prop = 'knjgh_pizzaslice1',
             PropBone = 60309,
@@ -13745,7 +12592,7 @@ RP.PropEmotes = {
     ["pizzas"] = { -- Custom Prop by knjgh
         "mp_player_inteat@burger",
         "mp_player_int_eat_burger",
-        "Pizza Slice - Jalapeño And Peperoni",
+        "Pizza Slice - JalapeÃ±o And Peperoni",
         AnimationOptions = {
             Prop = 'knjgh_pizzaslice1',
             PropBone = 60309,
@@ -15445,42 +14292,6 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["guitar5"] = {
-        "amb@world_human_musician@guitar@male@idle_a",
-        "idle_b",
-        "Guitar - Pride",
-        AnimationOptions = {
-            Prop = 'prop_rpemotesreborn_guitar_002',
-            PropBone = 24818,
-            PropPlacement = {
-                -0.1,
-                0.31,
-                0.1,
-                0.0,
-                20.0,
-                150.0
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ["guitar6"] = {
-        "switch@trevor@guitar_beatdown",
-        "001370_02_trvs_8_guitar_beatdown_idle_busker",
-        "Guitar - Pride 2",
-        AnimationOptions = {
-            Prop = 'prop_rpemotesreborn_guitar_002',
-            PropBone = 24818,
-            PropPlacement = {
-                -0.05,
-                0.31,
-                0.1,
-                0.0,
-                20.0,
-                150.0
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
     ["guitarelectric"] = {
         "amb@world_human_musician@guitar@male@idle_a",
         "idle_b",
@@ -15567,24 +14378,6 @@ RP.PropEmotes = {
                 -101.5083,
                 5.7251,
                 29.4987
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ["guitarcarry4"] = {
-        "move_weapon@jerrycan@generic",
-        "idle",
-        "Guitar Carry Accoustic - Pride",
-        AnimationOptions = {
-            Prop = "prop_rpemotesreborn_guitar_002",
-            PropBone = 28422,
-            PropPlacement = {
-                0.1100,
-                -0.1200,
-                -0.0500,
-                -80.0000,
-                0.0,
-                21.9999
             },
             onFootFlag = AnimFlag.MOVING,
         }
@@ -15704,25 +14497,6 @@ RP.PropEmotes = {
         "Guitar Sit And Play 2 - Pink",
         AnimationOptions = {
             Prop = "prop_rpemotesreborn_guitar_001",
-            PropBone = 24818,
-            PropPlacement = {
-                -0.0510,
-                0.2770,
-                -0.0299,
-                -140.3349,
-                166.3300,
-                29.7590
-            },
-            onFootFlag = AnimFlag.LOOP,
-            ExitEmote = "getup",
-        }
-    },
-    ["guitarsit3"] = {
-        "misssnowie@gatlax",
-        "base",
-        "Guitar Sit And Play 2 - Pride",
-        AnimationOptions = {
-            Prop = "prop_rpemotesreborn_guitar_002",
             PropBone = 24818,
             PropPlacement = {
                 -0.0510,
@@ -16873,24 +15647,6 @@ RP.PropEmotes = {
                 -13.9572354
             },
             --
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ["protest2"] = {
-        "rcmnigel1d",
-        "base_club_shoulder",
-        "Protest 2 - Pride",
-        AnimationOptions = {
-            Prop = "pride_sign_01",
-            PropBone = 57005,
-            PropPlacement = {
-                0.1820,
-                0.2400,
-                0.0600,
-                -69.3774235,
-                5.9142048,
-                -13.9572354
-            },
             onFootFlag = AnimFlag.MOVING,
         }
     },
@@ -18301,7 +17057,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["microck"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["microck"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@mic@p1",
         "mic@p1",
         "Microphone Rock",
@@ -18319,7 +17075,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["microckb"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["microckb"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@mic@p2",
         "mic@p2",
         "Microphone Rock 2",
@@ -18337,7 +17093,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["microckc"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["microckc"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@mic@p3",
         "mic@p3",
         "Microphone Rock 3",
@@ -18355,7 +17111,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["microckd"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["microckd"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@mic@p4",
         "mic@p4",
         "Microphone Rock 4",
@@ -18373,7 +17129,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["microcke"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["microcke"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@mic@p5",
         "mic@p5",
         "Microphone Rock 5",
@@ -18391,7 +17147,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["microckf"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["microckf"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@mic@p6",
         "mic@p6",
         "Microphone Rock 6",
@@ -18409,7 +17165,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["microckg"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["microckg"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@mic@p7",
         "mic@p7",
         "Microphone Rock 7",
@@ -18427,7 +17183,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["microckh"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["microckh"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@mic@p8",
         "mic@p8",
         "Microphone Rock 8",
@@ -18445,7 +17201,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["microcki"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["microcki"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@mic@p9",
         "mic@p9",
         "Microphone Rock 9",
@@ -18463,7 +17219,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["microckj"] = { -- Custom Emote Provided To RpEmotes By Prue颜
+    ["microckj"] = { -- Custom Emote Provided To RpEmotes By Prueé¢œ
         "lunyx@mic@p10",
         "mic@p10",
         "Microphone Rock 10",
@@ -22872,168 +21628,6 @@ RP.PropEmotes = {
                 0.0,
                 0.0,
                 0.0
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ['pflag'] = {
-        'rcmnigel1d',
-        'base_club_shoulder',
-        'Pride Flag - Rainbow',
-        AnimationOptions = {
-            Prop = 'prideflag1',
-            PropBone = 18905,
-            PropPlacement = {
-                0.0800,
-                -0.2090,
-                0.0900,
-                -82.6677,
-                -141.2988,
-                12.3308
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ['pflag2'] = {
-        'rcmnigel1d',
-        'base_club_shoulder',
-        'Pride Flag 2 - LGBTQ',
-        AnimationOptions = {
-            Prop = 'prideflag2',
-            PropBone = 18905,
-            PropPlacement = {
-                0.0800,
-                -0.2090,
-                0.0900,
-                -82.6677,
-                -141.2988,
-                12.3308
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ['pflag3'] = {
-        'rcmnigel1d',
-        'base_club_shoulder',
-        'Pride Flag 3 - Bisexual ',
-        AnimationOptions = {
-            Prop = 'prideflag3',
-            PropBone = 18905,
-            PropPlacement = {
-                0.0800,
-                -0.2090,
-                0.0900,
-                -82.6677,
-                -141.2988,
-                12.3308
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ['pflag4'] = {
-        'rcmnigel1d',
-        'base_club_shoulder',
-        'Pride Flag 4 - Lesbian ',
-        AnimationOptions = {
-            Prop = 'prideflag4',
-            PropBone = 18905,
-            PropPlacement = {
-                0.0800,
-                -0.2090,
-                0.0900,
-                -82.6677,
-                -141.2988,
-                12.3308
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ['pflag5'] = {
-        'rcmnigel1d',
-        'base_club_shoulder',
-        'Pride Flag 5 - Pansexual ',
-        AnimationOptions = {
-            Prop = 'prideflag5',
-            PropBone = 18905,
-            PropPlacement = {
-                0.0800,
-                -0.2090,
-                0.0900,
-                -82.6677,
-                -141.2988,
-                12.3308
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ['pflag6'] = {
-        'rcmnigel1d',
-        'base_club_shoulder',
-        'Pride Flag 6 - Transgender  ',
-        AnimationOptions = {
-            Prop = 'prideflag6',
-            PropBone = 18905,
-            PropPlacement = {
-                0.0800,
-                -0.2090,
-                0.0900,
-                -82.6677,
-                -141.2988,
-                12.3308
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ['pflag7'] = {
-        'rcmnigel1d',
-        'base_club_shoulder',
-        'Pride Flag 7 - Non Binary ',
-        AnimationOptions = {
-            Prop = 'prideflag7',
-            PropBone = 18905,
-            PropPlacement = {
-                0.0800,
-                -0.2090,
-                0.0900,
-                -82.6677,
-                -141.2988,
-                12.3308
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ['pflag8'] = {
-        'rcmnigel1d',
-        'base_club_shoulder',
-        'Pride Flag 8 - Asexual ',
-        AnimationOptions = {
-            Prop = 'prideflag8',
-            PropBone = 18905,
-            PropPlacement = {
-                0.0800,
-                -0.2090,
-                0.0900,
-                -82.6677,
-                -141.2988,
-                12.3308
-            },
-            onFootFlag = AnimFlag.MOVING,
-        }
-    },
-    ['pflag9'] = {
-        'rcmnigel1d',
-        'base_club_shoulder',
-        'Pride Flag 9 - Straight Ally ',
-        AnimationOptions = {
-            Prop = 'prideflag9',
-            PropBone = 18905,
-            PropPlacement = {
-                0.0800,
-                -0.2090,
-                0.0900,
-                -82.6677,
-                -141.2988,
-                12.3308
             },
             onFootFlag = AnimFlag.MOVING,
         }
