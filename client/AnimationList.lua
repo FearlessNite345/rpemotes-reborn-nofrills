@@ -2846,6 +2846,258 @@ RP.Dances = {
             onFootFlag = AnimFlag.LOOP,
         }
     },
+    ["dancepride"] = {
+        "anim@amb@nightclub@lazlow@hi_railing@",
+        "ambclub_09_mi_hi_bellydancer_laz",
+        "Dance Pride A",
+        AnimationOptions = {
+            Prop = 'lilprideflag1', -- Rainbow
+            PropBone = 18905,
+            PropPlacement = {
+                0.0900,
+                0.0000,
+                0.0300,
+                -39.911,
+                93.9166,
+                -5.8062
+            },
+            SecondProp = 'lilprideflag1',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {
+                0.0900,
+                -0.0200,
+                -0.0300,
+                -90.2454,
+                5.7068,
+                -28.7797
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["danceprideb"] = {
+        "anim@amb@nightclub@lazlow@hi_railing@",
+        "ambclub_09_mi_hi_bellydancer_laz",
+        "Dance Pride B - LGBTQIA",
+        AnimationOptions = {
+            Prop = 'lilprideflag2', -- LGBTQIA
+            PropBone = 18905,
+            PropPlacement = {
+                0.0900,
+                0.0000,
+                0.0300,
+                -39.911,
+                93.9166,
+                -5.8062
+            },
+            SecondProp = 'lilprideflag2',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {
+                0.0900,
+                -0.0200,
+                -0.0300,
+                -90.2454,
+                5.7068,
+                -28.7797
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["dancepridea"] = {
+        "anim@amb@nightclub@lazlow@hi_railing@",
+        "ambclub_09_mi_hi_bellydancer_laz",
+        "Dance Pride A - Bisexual",
+        AnimationOptions = {
+            Prop = 'lilprideflag3', -- Bisexual
+            PropBone = 18905,
+            PropPlacement = {
+                0.0900,
+                0.0000,
+                0.0300,
+                -39.911,
+                93.9166,
+                -5.8062
+            },
+            SecondProp = 'lilprideflag3',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {
+                0.0900,
+                -0.0200,
+                -0.0300,
+                -90.2454,
+                5.7068,
+                -28.7797
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["dancepridec"] = {
+        "anim@amb@nightclub@lazlow@hi_railing@",
+        "ambclub_09_mi_hi_bellydancer_laz",
+        "Dance Pride C - Lesbian",
+        AnimationOptions = {
+            Prop = 'lilprideflag4', -- Lesbian
+            PropBone = 18905,
+            PropPlacement = {
+                0.0900,
+                0.0000,
+                0.0300,
+                -39.911,
+                93.9166,
+                -5.8062
+            },
+            SecondProp = 'lilprideflag4',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {
+                0.0900,
+                -0.0200,
+                -0.0300,
+                -90.2454,
+                5.7068,
+                -28.7797
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["danceprided"] = {
+        "anim@amb@nightclub@lazlow@hi_railing@",
+        "ambclub_09_mi_hi_bellydancer_laz",
+        "Dance Pride D - Pansexual",
+        AnimationOptions = {
+            Prop = 'lilprideflag5', -- Pansexual
+            PropBone = 18905,
+            PropPlacement = {
+                0.0900,
+                0.0000,
+                0.0300,
+                -39.911,
+                93.9166,
+                -5.8062
+            },
+            SecondProp = 'lilprideflag5',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {
+                0.0900,
+                -0.0200,
+                -0.0300,
+                -90.2454,
+                5.7068,
+                -28.7797
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["dancepridee"] = {
+        "anim@amb@nightclub@lazlow@hi_railing@",
+        "ambclub_09_mi_hi_bellydancer_laz",
+        "Dance Pride E - Transgender",
+        AnimationOptions = {
+            Prop = 'lilprideflag6', -- Transgender
+            PropBone = 18905,
+            PropPlacement = {
+                0.0900,
+                0.0000,
+                0.0300,
+                -39.911,
+                93.9166,
+                -5.8062
+            },
+            SecondProp = 'lilprideflag6',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {
+                0.0900,
+                -0.0200,
+                -0.0300,
+                -90.2454,
+                5.7068,
+                -28.7797
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["dancepridef"] = {
+        "anim@amb@nightclub@lazlow@hi_railing@",
+        "ambclub_09_mi_hi_bellydancer_laz",
+        "Dance Pride F - Non Binary",
+        AnimationOptions = {
+            Prop = 'lilprideflag7', -- Lesbian
+            PropBone = 18905,
+            PropPlacement = {
+                0.0900,
+                0.0000,
+                0.0300,
+                -39.911,
+                93.9166,
+                -5.8062
+            },
+            SecondProp = 'lilprideflag7',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {
+                0.0900,
+                -0.0200,
+                -0.0300,
+                -90.2454,
+                5.7068,
+                -28.7797
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["danceprideg"] = {
+        "anim@amb@nightclub@lazlow@hi_railing@",
+        "ambclub_09_mi_hi_bellydancer_laz",
+        "Dance Pride G - Asexual",
+        AnimationOptions = {
+            Prop = 'lilprideflag8', -- Asexual
+            PropBone = 18905,
+            PropPlacement = {
+                0.0900,
+                0.0000,
+                0.0300,
+                -39.911,
+                93.9166,
+                -5.8062
+            },
+            SecondProp = 'lilprideflag8',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {
+                0.0900,
+                -0.0200,
+                -0.0300,
+                -90.2454,
+                5.7068,
+                -28.7797
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["danceprideh"] = {
+        "anim@amb@nightclub@lazlow@hi_railing@",
+        "ambclub_09_mi_hi_bellydancer_laz",
+        "Dance Pride H - Straight Ally",
+        AnimationOptions = {
+            Prop = 'lilprideflag9', -- Straight Ally
+            PropBone = 18905,
+            PropPlacement = {
+                0.0900,
+                0.0000,
+                0.0300,
+                -39.911,
+                93.9166,
+                -5.8062
+            },
+            SecondProp = 'lilprideflag9',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {
+                0.0900,
+                -0.0200,
+                -0.0300,
+                -90.2454,
+                5.7068,
+                -28.7797
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
     ["technodance"] = {
         "anim@amb@nightclub@mini@dance@dance_solo@techno_karate@",
         "high_left_up",
@@ -3134,6 +3386,267 @@ RP.AnimalEmotes = {
             ExitEmote = "bdogup",
         }
     },
+    ["bdogpridea"] = {
+        "creatures@rottweiler@amb@world_dog_sitting@base",
+        "base",
+        "Sit Pride A (big dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag1', -- Rainbow
+            PropBone = 31086,
+            PropPlacement = {
+                0.1900,
+                0.0000,
+                -0.0500,
+                100.0000,
+                90.0000,
+                0.0000
+            },
+            SecondProp = 'lilprideflag1',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.1940,
+                0.020,
+                -0.0500,
+                -90.0000,
+                -90.0000,
+                0.0000
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "bdogup",
+        }
+    },
+    ["bdogprideb"] = {
+        "creatures@rottweiler@amb@world_dog_sitting@base",
+        "base",
+        "Sit Pride B - LGBTQIA (big dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag2', -- LGBTQIA
+            PropBone = 31086,
+            PropPlacement = {
+                0.1900,
+                0.0000,
+                -0.0500,
+                100.0000,
+                90.0000,
+                0.0000
+            },
+            SecondProp = 'lilprideflag2',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.1940,
+                0.020,
+                -0.0500,
+                -90.0000,
+                -90.0000,
+                0.0000
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "bdogup",
+        }
+    },
+    ["bdogpridec"] = {
+        "creatures@rottweiler@amb@world_dog_sitting@base",
+        "base",
+        "Sit Pride C - Bisexual (big dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag3', -- Bisexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1900,
+                0.0000,
+                -0.0500,
+                100.0000,
+                90.0000,
+                0.0000
+            },
+            SecondProp = 'lilprideflag3',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.1940,
+                0.020,
+                -0.0500,
+                -90.0000,
+                -90.0000,
+                0.0000
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "bdogup",
+        }
+    },
+    ["bdogprided"] = {
+        "creatures@rottweiler@amb@world_dog_sitting@base",
+        "base",
+        "Sit Pride D - Lesbian (big dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag4', -- Lesbian
+            PropBone = 31086,
+            PropPlacement = {
+                0.1900,
+                0.0000,
+                -0.0500,
+                100.0000,
+                90.0000,
+                0.0000
+            },
+            SecondProp = 'lilprideflag4',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.1940,
+                0.020,
+                -0.0500,
+                -90.0000,
+                -90.0000,
+                0.0000
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "bdogup",
+        }
+    },
+    ["bdogpridee"] = {
+        "creatures@rottweiler@amb@world_dog_sitting@base",
+        "base",
+        "Sit Pride E - Pansexual (big dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag5', -- Pansexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1900,
+                0.0000,
+                -0.0500,
+                100.0000,
+                90.0000,
+                0.0000
+            },
+            SecondProp = 'lilprideflag5',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.1940,
+                0.020,
+                -0.0500,
+                -90.0000,
+                -90.0000,
+                0.0000
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "bdogup",
+        }
+    },
+    ["bdogpridef"] = {
+        "creatures@rottweiler@amb@world_dog_sitting@base",
+        "base",
+        "Sit Pride F - Transgender  (big dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag6', -- Transgender
+            PropBone = 31086,
+            PropPlacement = {
+                0.1900,
+                0.0000,
+                -0.0500,
+                100.0000,
+                90.0000,
+                0.0000
+            },
+            SecondProp = 'lilprideflag6',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.1940,
+                0.020,
+                -0.0500,
+                -90.0000,
+                -90.0000,
+                0.0000
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "bdogup",
+        }
+    },
+    ["bdogprideg"] = {
+        "creatures@rottweiler@amb@world_dog_sitting@base",
+        "base",
+        "Sit Pride G - Non Binary (big dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag7', -- Non Binary
+            PropBone = 31086,
+            PropPlacement = {
+                0.1900,
+                0.0000,
+                -0.0500,
+                100.0000,
+                90.0000,
+                0.0000
+            },
+            SecondProp = 'lilprideflag7',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.1940,
+                0.020,
+                -0.0500,
+                -90.0000,
+                -90.0000,
+                0.0000
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "bdogup",
+        }
+    },
+    ["bdogprideh"] = {
+        "creatures@rottweiler@amb@world_dog_sitting@base",
+        "base",
+        "Sit Pride H - Asexual (big dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag8', -- Asexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1900,
+                0.0000,
+                -0.0500,
+                100.0000,
+                90.0000,
+                0.0000
+            },
+            SecondProp = 'lilprideflag8',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.1940,
+                0.020,
+                -0.0500,
+                -90.0000,
+                -90.0000,
+                0.0000
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "bdogup",
+        }
+    },
+    ["bdogpridei"] = {
+        "creatures@rottweiler@amb@world_dog_sitting@base",
+        "base",
+        "Sit Pride I - Straight Ally (big dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag9', -- Straight Ally
+            PropBone = 31086,
+            PropPlacement = {
+                0.1900,
+                0.0000,
+                -0.0500,
+                100.0000,
+                90.0000,
+                0.0000
+            },
+            SecondProp = 'lilprideflag9',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.1940,
+                0.020,
+                -0.0500,
+                -90.0000,
+                -90.0000,
+                0.0000
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "bdogup",
+        }
+    },
     ["bdogfw"] = {
         "creatures@rottweiler@amb@world_dog_sitting@base",
         "nill",
@@ -3270,6 +3783,258 @@ RP.AnimalEmotes = {
                 0.0,
                 0.0,
                 0.0
+            },
+            SecondProp = 'prop_cs_sol_glasses',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.0500,
+                0.0300,
+                0.000,
+                -100.0000003,
+                90.00,
+                0.00
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogdancepridea"] = {
+        "creatures@pug@move",
+        "idle_turn_0",
+        "Dance Pride A (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag1',
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            SecondProp = 'prop_cs_sol_glasses',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.0500,
+                0.0300,
+                0.000,
+                -100.0000003,
+                90.00,
+                0.00
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogdanceprideb"] = {
+        "creatures@pug@move",
+        "idle_turn_0",
+        "Dance Pride B - LGBTQIA (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag2', -- LGBTQIA
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            SecondProp = 'prop_cs_sol_glasses',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.0500,
+                0.0300,
+                0.000,
+                -100.0000003,
+                90.00,
+                0.00
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogdancepridec"] = {
+        "creatures@pug@move",
+        "idle_turn_0",
+        "Dance Pride C - Bisexual (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag3', -- Bisexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            SecondProp = 'prop_cs_sol_glasses',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.0500,
+                0.0300,
+                0.000,
+                -100.0000003,
+                90.00,
+                0.00
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogdanceprided"] = {
+        "creatures@pug@move",
+        "idle_turn_0",
+        "Dance Pride D - Lesbian (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag4', -- Lesbian
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            SecondProp = 'prop_cs_sol_glasses',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.0500,
+                0.0300,
+                0.000,
+                -100.0000003,
+                90.00,
+                0.00
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogdancepridee"] = {
+        "creatures@pug@move",
+        "idle_turn_0",
+        "Dance Pride E - Pansexual (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag5', -- Pansexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            SecondProp = 'prop_cs_sol_glasses',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.0500,
+                0.0300,
+                0.000,
+                -100.0000003,
+                90.00,
+                0.00
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogdancepridef"] = {
+        "creatures@pug@move",
+        "idle_turn_0",
+        "Dance Pride F - Transgender  (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag6', -- Transgender
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            SecondProp = 'prop_cs_sol_glasses',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.0500,
+                0.0300,
+                0.000,
+                -100.0000003,
+                90.00,
+                0.00
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogdanceprideg"] = {
+        "creatures@pug@move",
+        "idle_turn_0",
+        "Dance Pride G - Non Binary (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag7', -- Non Binary
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            SecondProp = 'prop_cs_sol_glasses',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.0500,
+                0.0300,
+                0.000,
+                -100.0000003,
+                90.00,
+                0.00
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogdanceprideh"] = {
+        "creatures@pug@move",
+        "idle_turn_0",
+        "Dance Pride H - Asexual (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag8', -- Asexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            SecondProp = 'prop_cs_sol_glasses',
+            SecondPropBone = 31086,
+            SecondPropPlacement = {
+                0.0500,
+                0.0300,
+                0.000,
+                -100.0000003,
+                90.00,
+                0.00
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogdancepridei"] = {
+        "creatures@pug@move",
+        "idle_turn_0",
+        "Dance Pride I - Straight Ally (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag9', -- Straight Ally
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
             },
             SecondProp = 'prop_cs_sol_glasses',
             SecondPropBone = 31086,
@@ -3845,6 +4610,340 @@ RP.AnimalEmotes = {
             ExitEmote = "sdogup",
         }
     },
+    ["sdogpridea"] = {
+        "creatures@pug@move",
+        "nill",
+        "Pride A (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag1',
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogprideb"] = {
+        "creatures@pug@move",
+        "nill",
+        "Pride B - LGBTQIA (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag2', -- LGBTQIA
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogpridec"] = {
+        "creatures@pug@move",
+        "nill",
+        "Pride C - Bisexual (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag3', -- Bisexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogprided"] = {
+        "creatures@pug@move",
+        "nill",
+        "Pride D - Lesbian (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag4', -- Lesbian
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogpridee"] = {
+        "creatures@pug@move",
+        "nill",
+        "Pride E - Pansexual (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag5', -- Pansexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogpridef"] = {
+        "creatures@pug@move",
+        "nill",
+        "Pride F - Transgender  (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag6', -- Transgender
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogprideg"] = {
+        "creatures@pug@move",
+        "nill",
+        "Pride G - Non Binary (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag6', -- Non Binary
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogprideh"] = {
+        "creatures@pug@move",
+        "nill",
+        "Pride H - Non Binary (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag7', -- Non Binary
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogpridei"] = {
+        "creatures@pug@move",
+        "nill",
+        "Pride I - Asexual (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag8', -- Asexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["sdogpridesita"] = {
+        "creatures@pug@amb@world_dog_sitting@idle_a",
+        "idle_b",
+        "Pride A Sit (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag1',
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "sdogup",
+        }
+    },
+    ["sdogpridesitb"] = {
+        "creatures@pug@amb@world_dog_sitting@idle_a",
+        "idle_b",
+        "Pride B Sit LGBTQIA  (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag2', -- LGBTQIA
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "sdogup",
+        }
+    },
+    ["sdogpridesitc"] = {
+        "creatures@pug@amb@world_dog_sitting@idle_a",
+        "idle_b",
+        "Pride C Sit Bisexual  (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag3', -- Bisexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "sdogup",
+        }
+    },
+    ["sdogpridesitd"] = {
+        "creatures@pug@amb@world_dog_sitting@idle_a",
+        "idle_b",
+        "Pride D Sit Lesbian (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag4', -- Lesbian
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "sdogup",
+        }
+    },
+    ["sdogpridesite"] = {
+        "creatures@pug@amb@world_dog_sitting@idle_a",
+        "idle_b",
+        "Pride E Sit Pansexual  (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag5', -- Pansexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "sdogup",
+        }
+    },
+    ["sdogpridesitf"] = {
+        "creatures@pug@amb@world_dog_sitting@idle_a",
+        "idle_b",
+        "Pride F Sit Transgender   (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag6', -- Transgender
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "sdogup",
+        }
+    },
+    ["sdogpridesitg"] = {
+        "creatures@pug@amb@world_dog_sitting@idle_a",
+        "idle_b",
+        "Pride G Sit Non Binary (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag7', -- Non Binary
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "sdogup",
+        }
+    },
+    ["sdogpridesith"] = {
+        "creatures@pug@amb@world_dog_sitting@idle_a",
+        "idle_b",
+        "Pride H Sit Asexual  (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag8',
+            -- Asexual
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "sdogup",
+        }
+    },
+    ["sdogpridesiti"] = {
+        "creatures@pug@amb@world_dog_sitting@idle_a",
+        "idle_b",
+        "Pride I Sit Straight Ally  (small dog)",
+        AnimationOptions = {
+            Prop = 'lilprideflag9', -- Straight Ally
+            PropBone = 31086,
+            PropPlacement = {
+                0.1240,
+                -0.0080,
+                0.000,
+                0.0,
+                0.0,
+                -74.6999
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "sdogup",
+        }
+    },
     ["sdogpee"] = {
         "creatures@pug@move",
         "nill",
@@ -3942,7 +5041,6 @@ RP.AnimalEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ---- ANIMAL EMOTES ----
     ----     CATS      ----
 
     ["catsleep"] = {
@@ -4038,9 +5136,60 @@ RP.AnimalEmotes = {
             EmoteLoop = true
         }
     },
+    ----     COYOTE    ----
+    ["coyinspect"] = {
+        "creatures@coyote@amb@world_coyote_wander@base",
+        "base",
+        "Coyote Inspect",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP
+        }
+    },
+    ["coyagree"] = {
+        "creatures@coyote@amb@world_coyote_wander@idle_a",
+        "idle_a",
+        "Coyote Agree",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP
+        }
+    },
+    ["coyhowl"] = {
+        "creatures@coyote@amb@world_coyote_howl@idle_a",
+        "idle_a",
+        "Coyote Howl",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "coyhowlexit",
+        }
+    },
+    ["coyplaydead"] = {
+        "creatures@coyote@move",
+        "dead_left",
+        "Coyote Play Dead",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "coyplaydeadexit",
+        }
+    },
+    ["coyrest"] = {
+        "amb@lo_res_idles@",
+        "creatures_world_coyote_rest_lo_res_base",
+        "Coyote Rest",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "coylayexit",
+        }
+    },
+    ["coysit"] = {
+        "creatures@coyote@amb@world_coyote_howl@base",
+        "base",
+        "Coyote Sit",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "coyhowlexit",
+        }
+    },
 }
-
-
 
 
 --- EXIT EMOTES ---
@@ -4179,7 +5328,31 @@ RP.Exits = {
         AnimationOptions = {
             EmoteDuration = 5000
         }
-    }
+    },
+    ["coyhowlexit"] = {
+        "creatures@coyote@amb@peyote@enter",
+        "enter",
+        "Coyote Sit Exit",
+        AnimationOptions = {
+            EmoteDuration = 4000
+        }
+    },
+    ["coylayexit"] = {
+        "creatures@coyote@amb@world_coyote_rest@exit",
+        "exit",
+        "Coyote Lay Exit",
+        AnimationOptions = {
+            EmoteDuration = 4000
+        }
+    },
+    ["coyplaydeadexit"] = {
+        "creatures@coyote@getup",
+        "getup_l",
+        "Coyote Play Dead Exit",
+        AnimationOptions = {
+            EmoteDuration = 4000
+        }
+    },
 }
 
 
@@ -8166,7 +9339,7 @@ RP.Emotes = {
         "peeing_loop",
         "Pee (Male)",
         AnimationOptions = {
-            onFootflag = AnimFlag.STUCK,
+            onFootFlag = AnimFlag.STUCK,
             PtfxAsset = "scr_amb_chop",
             PtfxName = "ent_anim_dog_peeing",
             PtfxNoProp = true,
@@ -9769,6 +10942,183 @@ RP.Emotes = {
             EmoteLoop = true
         }
     },
+    ["islampray1"] = { -- Made by Struggleville
+        "smo@prayer_posepack_01",
+        "prayer_posepack_01_clip",
+        "Islam Pray - Qiyam Sadl",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray2"] = { -- Made by Struggleville
+        "smo@prayer_posepack_02",
+        "prayer_posepack_02_clip",
+        "Islam Pray - Takbir",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray3"] = { -- Made by Struggleville
+        "smo@prayer_posepack_03",
+        "prayer_posepack_03_clip",
+        "Islam Pray - Qiyam Qabd",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray4"] = { -- Made by Struggleville
+        "smo@prayer_posepack_04",
+        "prayer_posepack_04_clip",
+        "Islam Pray - Ruku",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray5"] = { -- Made by Struggleville
+        "smo@prayer_posepack_05",
+        "prayer_posepack_05_clip",
+        "Islam Pray - Sujud 1",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray6"] = { -- Made by Struggleville
+        "smo@prayer_posepack_06",
+        "prayer_posepack_06_clip",
+        "Islam Pray - Julus",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray7"] = { -- Made by Struggleville
+        "smo@prayer_posepack_07",
+        "prayer_posepack_07_clip",
+        "Islam Pray - Tasleem",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray8"] = { -- Made by Struggleville
+        "smo@prayer_posepack_08",
+        "prayer_posepack_08_clip",
+        "Islam Pray - Tasleem 2",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray9"] = { -- Made by Struggleville
+        "smo@prayer_posepack_09",
+        "prayer_posepack_09_clip",
+        "Islam Pray - tashahhud",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray10"] = { -- Made by Struggleville
+        "smo@prayer_posepack_10",
+        "prayer_posepack_10_clip",
+        "Islam Pray - Tasleem 3",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+
+    ["islampray11"] = { -- Made by Struggleville
+        "smo@prayer_posepack_11",
+        "prayer_posepack_11_clip",
+        "Islam Pray - Julus 2",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray12"] = { -- Made by Struggleville
+        "smo@prayer_posepack_12",
+        "prayer_posepack_12_clip",
+        "Islam Pray - Julus 3",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
+    ["islampray13"] = { -- Made by Struggleville
+        "smo@prayer_posepack_13",
+        "prayer_posepack_13_clip",
+        "Islam Pray - Sujud 2",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+
+    },
+    ["jewishpray"] = { -- Made by Struggleville
+        "smo@prayer_posepack_14",
+        "prayer_posepack_14_clip",
+        "Jewish Pray",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+
+    },
+    ["jewishpray2"] = { -- Made by Struggleville
+        "smo@prayer_posepack_15",
+        "prayer_posepack_15_clip",
+        "Jewish Pray 2",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+
+    },
+    ["christianpray"] = { -- Made by Struggleville
+        "smo@prayer_posepack_16",
+        "prayer_posepack_16_clip",
+        "Christian Pray",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+
+    },
+    ["christianpray2"] = { -- Made by Struggleville
+        "smo@prayer_posepack_17",
+        "prayer_posepack_17_clip",
+        "Christian Pray 2",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+
+    },
+    ["christianpray3"] = { -- Made by Struggleville
+        "smo@prayer_posepack_18",
+        "prayer_posepack_18_clip",
+        "Christian Pray 3",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+
+    },
+    ["christianpray4"] = { -- Made by Struggleville
+        "smo@prayer_posepack_19",
+        "prayer_posepack_19_clip",
+        "Christian Pray 4",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+
+    },
+    ["christianpray5"] = { -- Made by Struggleville
+        "smo@prayer_posepack_20",
+        "prayer_posepack_20_clip",
+        "Christian Pray 5",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+
+    },
+    ["christianpray6"] = { -- Made by Struggleville
+        "smo@prayer_posepack_21",
+        "prayer_posepack_21_clip",
+        "Christian Pray 6",
+        AnimationOptions = {
+            onFootFlag = AnimFlag.LOOP,
+        }
+    },
 }
 
 --- PROP EMOTES GO HERE. CURRENTLY SUPPORTS UP TO ONE OR TWO PROPS  ---
@@ -10192,7 +11542,25 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING
         }
     },
-    ["cake6"] = { -- Custom Prop By PataMods
+    ["cake6"] = {
+        "anim@heists@box_carry@",
+        "idle",
+        "Pride Cake",
+        AnimationOptions = { -- Custom Prop By PataMods
+            Prop = 'pata_cake2',
+            PropBone = 28422,
+            PropPlacement = {
+                0.0,
+               -0.0700,
+               -0.0400,
+               10.0000,
+                0.0000,
+                0.0000
+            },
+            onFootFlag = AnimFlag.MOVING
+        }
+    },
+    ["cake7"] = { -- Custom Prop By PataMods
         "anim@heists@box_carry@",
         "idle",
         "Chocolate Mud Cake",
@@ -10300,7 +11668,25 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["cakew6"] = { -- Custom Prop & Emote By BzZz
+    ["cakew6"] = {
+        "anim@move_f@waitress",
+        "idle",
+        "Cake Waiter - Pride",
+        AnimationOptions = {
+            Prop = "pata_cake2",
+            PropBone = 28422,
+            PropPlacement = {
+                0.0000,
+                0.0000,
+                0.1100,
+                0.0,
+                0.0,
+               20.0
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["cakew7"] = { -- Custom Prop & Emote By BzZz
         "anim@move_f@waitress",
         "idle",
         "Cake Waiter - Chocolate Mud",
@@ -10477,7 +11863,24 @@ RP.PropEmotes = {
              -101.1702,
               28.0243
             },
-            onFootflag = AnimFlag.STUCK,
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["balloon2"] = {
+        "anim@heists@humane_labs@finale@keycards",
+        "ped_a_enter_loop",
+        "Balloon 2 - Pride",
+        AnimationOptions = {
+            Prop = "pride_heart_balloon",
+            PropBone = 60309,
+            PropPlacement = {
+                1.0600,
+                0.4900,
+                0.0140,
+               73.5103,
+              -30.9638,
+               19.3946
+            },
             onFootFlag = AnimFlag.MOVING,
         }
     },
@@ -14042,6 +15445,42 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
+    ["guitar5"] = {
+        "amb@world_human_musician@guitar@male@idle_a",
+        "idle_b",
+        "Guitar - Pride",
+        AnimationOptions = {
+            Prop = 'prop_rpemotesreborn_guitar_002',
+            PropBone = 24818,
+            PropPlacement = {
+                -0.1,
+                0.31,
+                0.1,
+                0.0,
+                20.0,
+                150.0
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["guitar6"] = {
+        "switch@trevor@guitar_beatdown",
+        "001370_02_trvs_8_guitar_beatdown_idle_busker",
+        "Guitar - Pride 2",
+        AnimationOptions = {
+            Prop = 'prop_rpemotesreborn_guitar_002',
+            PropBone = 24818,
+            PropPlacement = {
+                -0.05,
+                0.31,
+                0.1,
+                0.0,
+                20.0,
+                150.0
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
     ["guitarelectric"] = {
         "amb@world_human_musician@guitar@male@idle_a",
         "idle_b",
@@ -14135,6 +15574,24 @@ RP.PropEmotes = {
     ["guitarcarry4"] = {
         "move_weapon@jerrycan@generic",
         "idle",
+        "Guitar Carry Accoustic - Pride",
+        AnimationOptions = {
+            Prop = "prop_rpemotesreborn_guitar_002",
+            PropBone = 28422,
+            PropPlacement = {
+                0.1100,
+                -0.1200,
+                -0.0500,
+                -80.0000,
+                0.0,
+                21.9999
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["guitarcarry5"] = {
+        "move_weapon@jerrycan@generic",
+        "idle",
         "Guitar Carry Electric",
         AnimationOptions = {
             Prop = "prop_el_guitar_01",
@@ -14150,7 +15607,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["guitarcarry5"] = {
+    ["guitarcarry6"] = {
         "move_weapon@jerrycan@generic",
         "idle",
         "Guitar Carry Electric 2",
@@ -14168,7 +15625,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["guitarcarry6"] = {
+    ["guitarcarry7"] = {
         "move_weapon@jerrycan@generic",
         "idle",
         "Guitar Carry Electric 3",
@@ -14186,7 +15643,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["guitarcarry7"] = {
+    ["guitarcarry8"] = {
         "move_weapon@jerrycan@generic",
         "idle",
         "Guitar Carry Electric 4",
@@ -14204,7 +15661,7 @@ RP.PropEmotes = {
             onFootFlag = AnimFlag.MOVING,
         }
     },
-    ["guitarcarry8"] = {
+    ["guitarcarry9"] = {
         "move_weapon@jerrycan@generic",
         "idle",
         "Guitar Carry Electric 5",
@@ -14247,6 +15704,25 @@ RP.PropEmotes = {
         "Guitar Sit And Play 2 - Pink",
         AnimationOptions = {
             Prop = "prop_rpemotesreborn_guitar_001",
+            PropBone = 24818,
+            PropPlacement = {
+                -0.0510,
+                0.2770,
+                -0.0299,
+                -140.3349,
+                166.3300,
+                29.7590
+            },
+            onFootFlag = AnimFlag.LOOP,
+            ExitEmote = "getup",
+        }
+    },
+    ["guitarsit3"] = {
+        "misssnowie@gatlax",
+        "base",
+        "Guitar Sit And Play 2 - Pride",
+        AnimationOptions = {
+            Prop = "prop_rpemotesreborn_guitar_002",
             PropBone = 24818,
             PropPlacement = {
                 -0.0510,
@@ -15397,6 +16873,114 @@ RP.PropEmotes = {
                 -13.9572354
             },
             --
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["protest2"] = {
+        "rcmnigel1d",
+        "base_club_shoulder",
+        "Protest 2 - Pride",
+        AnimationOptions = {
+            Prop = "pride_sign_01",
+            PropBone = 57005,
+            PropPlacement = {
+                0.1820,
+                0.2400,
+                0.0600,
+                -69.3774235,
+                5.9142048,
+                -13.9572354
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["protest3"] = {
+        "rcmnigel1d",
+        "base_club_shoulder",
+        "Protest 3 - BLM",
+        AnimationOptions = {
+            Prop = "scully_blm",
+            PropBone = 57005,
+            PropPlacement = {
+                0.1820,
+                0.2400,
+                0.0600,
+                -69.3774235,
+                5.914205,
+                -13.957235
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["protest4"] = {
+        "rcmnigel1d",
+        "base_club_shoulder",
+        "Protest 4 - LSPD",
+        AnimationOptions = {
+            Prop = "prop_protestsign_01_fh",
+            PropBone = 57005,
+            PropPlacement = {
+                0.1820,
+                0.2400,
+                0.0600,
+                -69.3774235,
+                5.914205,
+                -13.957235
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["protest5"] = {
+        "rcmnigel1d",
+        "base_club_shoulder",
+        "Protest 5 - FIB",
+        AnimationOptions = {
+            Prop = "prop_protestsign_02_fh",
+            PropBone = 57005,
+            PropPlacement = {
+                0.1820,
+                0.2400,
+                0.0600,
+                -69.3774235,
+                5.914205,
+                -13.957235
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["protest6"] = {
+        "rcmnigel1d",
+        "base_club_shoulder",
+        "Protest 6 - IAA",
+        AnimationOptions = {
+            Prop = "prop_protestsign_03_fh",
+            PropBone = 57005,
+            PropPlacement = {
+                0.1820,
+                0.2400,
+                0.0600,
+                -69.3774235,
+                5.914205,
+                -13.957235
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ["protest7"] = {
+        "rcmnigel1d",
+        "base_club_shoulder",
+        "Protest 7 - PIA",
+        AnimationOptions = {
+            Prop = "prop_protestsign_04_fh",
+            PropBone = 57005,
+            PropPlacement = {
+                0.1820,
+                0.2400,
+                0.0600,
+                -69.3774235,
+                5.914205,
+                -13.957235
+            },
             onFootFlag = AnimFlag.MOVING,
         }
     },
@@ -20409,8 +21993,7 @@ RP.PropEmotes = {
               -88.0171,
                63.0612
             },
-            onFootflag = AnimFlag.STUCK,
-            onFootFlag = AnimFlag.MOVING
+            onFootFlag = AnimFlag.MOVING,
         }
     },
     ["idcardb"] = {
@@ -20428,8 +22011,7 @@ RP.PropEmotes = {
              -180.00,
                78.999
             },
-            onFootflag = AnimFlag.STUCK,
-            onFootFlag = AnimFlag.MOVING
+            onFootFlag = AnimFlag.MOVING,
         }
     },
     ["idcardc"] = {
@@ -20447,8 +22029,7 @@ RP.PropEmotes = {
               -88.0171,
                63.0612
             },
-            onFootflag = AnimFlag.STUCK,
-            onFootFlag = AnimFlag.MOVING
+            onFootFlag = AnimFlag.MOVING,
         }
     },
     ["idcardd"] = {
@@ -20466,8 +22047,7 @@ RP.PropEmotes = {
               -88.0171,
                63.0612
             },
-            onFootflag = AnimFlag.STUCK,
-            onFootFlag = AnimFlag.MOVING
+            onFootFlag = AnimFlag.MOVING,
         }
     },
     ["idcarde"] = {
@@ -20485,8 +22065,7 @@ RP.PropEmotes = {
               -88.0171,
                63.0612
             },
-            onFootflag = AnimFlag.STUCK,
-            onFootFlag = AnimFlag.MOVING
+            onFootFlag = AnimFlag.MOVING,
         }
     },
     ["idcardf"] = {
@@ -20504,8 +22083,7 @@ RP.PropEmotes = {
               -88.0171,
                63.0612
             },
-            onFootflag = AnimFlag.STUCK,
-            onFootFlag = AnimFlag.MOVING
+            onFootFlag = AnimFlag.MOVING,
         }
     },
     ["idcardg"] = {
@@ -20523,8 +22101,7 @@ RP.PropEmotes = {
               -88.0171,
                63.0612
             },
-            onFootflag = AnimFlag.STUCK,
-            onFootFlag = AnimFlag.MOVING
+            onFootFlag = AnimFlag.MOVING,
         }
     },
     ["idcardh"] = {
@@ -20542,7 +22119,6 @@ RP.PropEmotes = {
              -176.6694,
                74.9000
             },
-            onFootflag = AnimFlag.STUCK,
             onFootFlag = AnimFlag.MOVING,
         }
     },
@@ -20561,8 +22137,7 @@ RP.PropEmotes = {
               -177.8499,
                 23.6377
             },
-            onFootflag = AnimFlag.STUCK,
-            onFootFlag = AnimFlag.MOVING
+            onFootFlag = AnimFlag.MOVING,
         }
     },
     ["phone"] = {
@@ -21297,6 +22872,168 @@ RP.PropEmotes = {
                 0.0,
                 0.0,
                 0.0
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ['pflag'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Pride Flag - Rainbow',
+        AnimationOptions = {
+            Prop = 'prideflag1',
+            PropBone = 18905,
+            PropPlacement = {
+                0.0800,
+                -0.2090,
+                0.0900,
+                -82.6677,
+                -141.2988,
+                12.3308
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ['pflag2'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Pride Flag 2 - LGBTQ',
+        AnimationOptions = {
+            Prop = 'prideflag2',
+            PropBone = 18905,
+            PropPlacement = {
+                0.0800,
+                -0.2090,
+                0.0900,
+                -82.6677,
+                -141.2988,
+                12.3308
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ['pflag3'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Pride Flag 3 - Bisexual ',
+        AnimationOptions = {
+            Prop = 'prideflag3',
+            PropBone = 18905,
+            PropPlacement = {
+                0.0800,
+                -0.2090,
+                0.0900,
+                -82.6677,
+                -141.2988,
+                12.3308
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ['pflag4'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Pride Flag 4 - Lesbian ',
+        AnimationOptions = {
+            Prop = 'prideflag4',
+            PropBone = 18905,
+            PropPlacement = {
+                0.0800,
+                -0.2090,
+                0.0900,
+                -82.6677,
+                -141.2988,
+                12.3308
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ['pflag5'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Pride Flag 5 - Pansexual ',
+        AnimationOptions = {
+            Prop = 'prideflag5',
+            PropBone = 18905,
+            PropPlacement = {
+                0.0800,
+                -0.2090,
+                0.0900,
+                -82.6677,
+                -141.2988,
+                12.3308
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ['pflag6'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Pride Flag 6 - Transgender  ',
+        AnimationOptions = {
+            Prop = 'prideflag6',
+            PropBone = 18905,
+            PropPlacement = {
+                0.0800,
+                -0.2090,
+                0.0900,
+                -82.6677,
+                -141.2988,
+                12.3308
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ['pflag7'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Pride Flag 7 - Non Binary ',
+        AnimationOptions = {
+            Prop = 'prideflag7',
+            PropBone = 18905,
+            PropPlacement = {
+                0.0800,
+                -0.2090,
+                0.0900,
+                -82.6677,
+                -141.2988,
+                12.3308
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ['pflag8'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Pride Flag 8 - Asexual ',
+        AnimationOptions = {
+            Prop = 'prideflag8',
+            PropBone = 18905,
+            PropPlacement = {
+                0.0800,
+                -0.2090,
+                0.0900,
+                -82.6677,
+                -141.2988,
+                12.3308
+            },
+            onFootFlag = AnimFlag.MOVING,
+        }
+    },
+    ['pflag9'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Pride Flag 9 - Straight Ally ',
+        AnimationOptions = {
+            Prop = 'prideflag9',
+            PropBone = 18905,
+            PropPlacement = {
+                0.0800,
+                -0.2090,
+                0.0900,
+                -82.6677,
+                -141.2988,
+                12.3308
             },
             onFootFlag = AnimFlag.MOVING,
         }

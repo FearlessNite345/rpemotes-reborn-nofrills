@@ -9,6 +9,8 @@ LastEmote = {
     emoteType = nil,
 }
 local lastEmoteTime = 0
+local isBumpingPed = false
+local pedBumpTimeout = 500
 
 ---@type ScenarioType
 local ChosenScenarioType
@@ -166,7 +168,7 @@ local function checkStatusThread(dict, anim)
             Wait(5)
         end
         while CheckStatus and IsInAnimation do
-            if not IsEntityPlayingAnim(PlayerPedId(), dict, anim, 3) then
+            if not IsEntityPlayingAnim(PlayerPedId(), dict, anim, 3) and not isBumpingPed then
                 DebugPrint("Animation ended")
                 DestroyAllProps()
                 EmoteCancel()
@@ -202,7 +204,7 @@ local function exitScenario()
 end
 
 function EmoteCancel(force)
-    if not LocalPlayer.state.canCancel and not force then return end
+    if (not LocalPlayer.state.canCancel and GetConvar("onesync", "off") == "on") and not force then return end
 
     LocalPlayer.state:set('currentEmote', nil, true)
     EmoteCancelPlaying = true
@@ -316,8 +318,13 @@ local function addProp(data)
     assert(data.noCollision == nil or type(data.noCollision) == "boolean", 'noCollision must be a boolean')
 
     local target = data.ped and data.ped > 0 and data.ped or PlayerPedId()
-    if data.playerId and DoesEntityExist(GetPlayerPed(data.playerId)) then
-        target = GetPlayerPed(data.playerId)
+    if data.playerId then
+        local playerPed = GetPlayerPed(data.playerId)
+        if not DoesEntityExist(playerPed) then
+            DebugPrint("addProp: Target player ped doesn't exist, skipping prop attachment")
+            return false
+        end
+        target = playerPed
     end
     local x, y, z = table.unpack(GetEntityCoords(target))
 
@@ -328,7 +335,7 @@ local function addProp(data)
 
     LoadPropDict(data.prop1)
 
-    attachedProp = CreateObject(GetHashKey(data.prop1), x, y, z + 0.2, false, false, false)
+    attachedProp = CreateObject(GetHashKey(data.prop1), x, y, z + 0.2, data.playerId ~= nil and Config.UseOldPropSpawning, false, false)
 
     if data.textureVariation ~= nil then
         SetObjectTextureVariation(attachedProp, data.textureVariation)
@@ -350,6 +357,7 @@ local function addProp(data)
             SetEntityAlpha(attachedProp, targetAlpha, false)
         end
     else
+        ServerProps[target] = ServerProps[target] or {}
         ServerProps[target][#ServerProps[target]+1] = attachedProp
     end
 
@@ -491,7 +499,7 @@ end
 
 function EmoteCommandStart(args)
     if #args <= 0 then return end
-    if IsEntityDead(PlayerPedId()) or IsPedRagdoll(PlayerPedId()) or IsPedGettingUp(PlayerPedId()) or IsPedInMeleeCombat(PlayerPedId()) then
+    if IsPedBusy(PlayerPedId()) then
         TriggerEvent('chat:addMessage', {
             color = { 255, 0, 0 },
             multiline = true,
@@ -503,7 +511,7 @@ function EmoteCommandStart(args)
         TriggerEvent('chat:addMessage', {
             color = { 255, 0, 0 },
             multiline = true,
-            args = { "RPEmotes", Translate('emimming') }
+            args = { "RPEmotes", Translate('swimming') }
         })
         return
     end
@@ -573,7 +581,11 @@ function DestroyAllProps(isNonPlayer)
         end
         PreviewPedProps = {}
     else
-        LocalPlayer.state:set("rpemotes:props", {}, true)
+        if Config.UseOldPropSpawning then
+            ClearEmoteProps()
+        else
+            LocalPlayer.state:set("rpemotes:props", {}, true)
+        end
         LocalPlayer.state:set("ptfxPropId", nil, true)
     end
     DebugPrint("Destroyed Props for " .. (isNonPlayer and "non-player" or "player"))
@@ -682,7 +694,7 @@ function OnEmotePlay(name, textureVariation, emoteType)
         return
     end
 
-    if not LocalPlayer.state.canEmote then return end
+    if not LocalPlayer.state.canEmote and GetConvar("onesync", "off") == "on" then return end
 
     if not DoesEntityExist(PlayerPedId()) then return false end
 
@@ -836,7 +848,11 @@ function OnEmotePlay(name, textureVariation, emoteType)
     currentEmote = emoteData
 
     if animOption and animOption.Prop then
-        LocalPlayer.state:set("rpemotes:props", {Emote = name, TextureVariation = textureVariation, emoteType = emoteType}, true)
+        if Config.UseOldPropSpawning then
+            addProps(animOption, textureVariation, PlayerPedId(), PlayerId(), false)
+        else
+            LocalPlayer.state:set("rpemotes:props", {Emote = name, TextureVariation = textureVariation, emoteType = emoteType}, true)
+        end
             -- Ptfx is on the prop, then we need to sync it
         if animOption.PtfxAsset and not animOption.PtfxNoProp then
             LocalPlayer.state:set("ptfxPropId", animOption.SecondProp and 2 or 1, true) -- TODO: prop ptfx should be related to a prop.
@@ -887,33 +903,55 @@ AddEventHandler('CEventOpenDoor', function(unk1)
     OnEmotePlay(CurrentAnimationName, CurrentTextureVariation)
 end)
 
-local isBumpingPed = false
-local timeout = 500
 
-AddEventHandler("CEventPlayerCollisionWithPed", function(unk1)
-    if unk1[1] ~= PlayerPedId() then return end
-    if not IsInAnimation then return end
-
+local function recoverLostAnimation()
+    if not Config.RecoverEmotesAfterRagdoll then return end
+    local pPed = PlayerPedId()
     if isBumpingPed then
         timeout = 500
         return
     end
     isBumpingPed = true
-    timeout = 500
+    pedBumpTimeout = 500
     -- We wait a bit to avoid collision with the ped resetting the animation again
-
-    while timeout > 0 do
+    DebugPrint("Trying to recover...")
+    while pedBumpTimeout > 0 or IsPedBusy(pPed) do
         Wait(100)
-        timeout = timeout - 100
+        pedBumpTimeout = pedBumpTimeout - 100
     end
 
-    if not IsInAnimation then return end
-
+    if not IsInAnimation then
+        DebugPrint("Can't recover! Not in an animation!")
+        return
+    end
     isBumpingPed = false
-    ClearPedTasks(PlayerPedId())
+
+    -- Check for Scripted Animation tasks.
+    -- See https://docs.fivem.net/natives/?_0xB0760331C7AA4155 for a list of tasks. Check types.lua for the enum.
+    if GetIsTaskActive(pPed, TaskType.MELEE_UPPERBODY_ANIMS) or GetIsTaskActive(pPed, TaskType.SCRIPTED_ANIMATIONS) or GetIsTaskActive(pPed, TaskType.SYNCHRONIZED_SCENE) then
+        DebugPrint("Won't recover! Animation already playing!")
+        return
+    end
+    DebugPrint("Recovering anim!")
+    ClearPedTasks(pPed)
     Wait(125)
     DestroyAllProps()
     OnEmotePlay(CurrentAnimationName, CurrentTextureVariation)
+end
+
+AddEventHandler("CEventPlayerCollisionWithPed", function(unk1)
+    if unk1[1] ~= PlayerPedId() then return end
+    if not IsInAnimation then return end
+
+    recoverLostAnimation()
+end)
+
+AddEventHandler("gameEventTriggered", function(eventName, eventData)
+    if eventName ~= "CEventNetworkEntityDamage" then return end
+    if eventData[1] ~= PlayerPedId() then return end
+    if not IsInAnimation then return end
+
+    recoverLostAnimation()
 end)
 
 AddEventHandler('onResourceStop', function(resource)

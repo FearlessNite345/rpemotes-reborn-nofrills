@@ -32,6 +32,8 @@ Config = {
     TitleColour = { R = 255, G = 0, B = 255, A = 255 },
     MenuPosition = 'right', -- 'left' / 'right'
     CustomMenuEnabled = true, -- Change the header.png to your own image
+    StripRichText = false, -- Set to true if using a custom notification system that doesn't support GTA rich text formatting this removes symbols like ~ in ox_lib notifications
+
 
     -- Emoji Menu
     EmojiMenuEnabled = true, -- enables Emoji menu for all users
@@ -39,7 +41,6 @@ Config = {
     MaxEmojisPerPlayer = 3,     -- Max emojis that can stack (client-side)
     EmojiCooldownMs = 2500,     -- Cooldown between sends in ms (server-side)
     EmojiRange = 25.0, -- Distance in meters where emojis are visible
-    StripRichText = false, -- Set to true if using a custom notification system that doesn't support GTA rich text formatting
 
     -- Combat Car, and Player Movement
     DisarmPlayerOnEmote = false,
@@ -103,6 +104,15 @@ Config = {
     CheckForUpdates = true,
     DebugDisplay = false,
 
+    -- Emote Placement
+    PlacementEnabled = true,
+    DisablePlacementKeybindWhileMoving = true, -- When true, you cannot enter placement mode while moving. This only affects the keybind.
+
+    -- Old Props Spawning
+    UseOldPropSpawning = false, -- Uses networked objects spawned client-side, for props. Only use this when you have issues spawning props.
+
+    -- Recover Emotes after Ragdoll
+    RecoverEmotesAfterRagdoll = true -- If true, the resource will attempt to recover emotes after being bumped / ragdolled. Doesn't work for all.
 }
 
 -- Custom Categories: Define custom categories to organize emotes in the menu

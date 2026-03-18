@@ -95,6 +95,10 @@ function IsPlayerAiming(player)
     tonumber(GetSelectedPedWeapon(player)) ~= tonumber(GetHashKey("WEAPON_UNARMED"))
 end
 
+function IsPedBusy(playerPed)
+    return IsEntityDead(playerPed) or IsPedRagdoll(playerPed) or IsPedGettingUp(playerPed) or IsPedInMeleeCombat(playerPed)
+end
+
 function CanPlayerCrouchCrawl(ped)
     return IsPedOnFoot(ped)
         and not IsPedJumping(ped)
@@ -452,7 +456,7 @@ function ShowPedMenu(zoom)
                 averagedTarget = averagedTarget / #positionBuffer
 
                 local zOffset = IsPedHuman(ClonedPed) and 0.0 or (zoom and 0.85 or 0.5)
-                SetEntityCoords(ClonedPed, averagedTarget.x, averagedTarget.y, averagedTarget.z + zOffset, false, false, false, false)                local heading_offset = Config.MenuPosition == "left" and 170.0 or 190.0
+                SetEntityCoords(ClonedPed, averagedTarget.x, averagedTarget.y, averagedTarget.z + zOffset, false, false, false, false)
                 local heading_offset = Config.MenuPosition == "left" and 170.0 or 190.0
                 SetEntityHeading(ClonedPed, camRot.z + heading_offset)
                 SetEntityRotation(ClonedPed, camRot.x * (-1), 0.0, camRot.z + 170.0, 2, false)
@@ -563,3 +567,16 @@ RegisterNetEvent("onResourceStop", function(resource)
         end
     end
 end)
+
+-----------------------------------------------------------------------------------------------------------------------
+-- Client-side prop deletion, in case the normal prop spawning does not work.
+-- Client-side Prop spawning uses `addProps()` as that function never actually lost the functionality.
+
+function ClearEmoteProps()
+    if ServerProps and ServerProps[PlayerPedId()] then
+        for _, prop in pairs(ServerProps[PlayerPedId()]) do
+            SetEntityAsMissionEntity(prop, false, false)
+            DeleteEntity(prop)
+        end
+    end
+end

@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 description 'rpemotes-reborn'
-version '2.0.1'
+version '2.0.4'
 
 lua54 'yes'
 use_experimental_fxv2_oal 'yes'
@@ -93,3 +93,5 @@ data_file 'DLC_ITYP_REQUEST' 'stream/scully_props.ytyp'
 data_file 'DLC_ITYP_REQUEST' 'stream/samnick_prop_lighter01.ytyp'
 
 data_file 'DLC_ITYP_REQUEST' 'stream/bzzz_murderpack.ytyp'
+
+data_file 'DLC_ITYP_REQUEST' 'stream/prop_protestsign_fh.ytyp'

@@ -6,6 +6,7 @@ local CompatGroup = {
     RETRIEVER = 'Retriever',
     HUSKY = 'Husky',
     CAT = 'Cat',
+    COYOTE = 'Coyote',
 }
 
 --- nested table of parent child relationships
@@ -18,6 +19,7 @@ local relationships = {
     },
     [CompatGroup.SMALL_DOG] = {},
     [CompatGroup.CAT] = {},
+    [CompatGroup.COYOTE] = {},
 }
 
 --- models not listed will be assumed to be compatible with all emotes not assigned to a compat group.
@@ -83,6 +85,7 @@ local models = {
     [`k9wolf`] = CompatGroup.ROTTWEILER,
     [`pitbull`] = CompatGroup.ROTTWEILER,
     [`bugdoberman`] = CompatGroup.ROTTWEILER,
+    [`bughusky`] = CompatGroup.ROTTWEILER,
     -- DWX https://forum.cfx.re/t/free-rework-edit-animal-ped-fivem-ready-german-shepherd-belgian-malinois
     [`dwxunit`] = CompatGroup.ROTTWEILER,
 
@@ -188,6 +191,7 @@ local models = {
     [`bugdalpuppy`] = CompatGroup.SMALL_DOG,
     [`k9puppydoberman`] = CompatGroup.SMALL_DOG,
     [`bugxlpuppy`] = CompatGroup.SMALL_DOG,
+    [`bughuskypup`] = CompatGroup.SMALL_DOG,
 
     -- CAT
     [`a_c_cat`] = CompatGroup.CAT,
@@ -206,6 +210,14 @@ local models = {
 
     -- Bug Store: https://bugs-store.tebex.io/
     [`tabbycat`] = CompatGroup.CAT,
+
+    -- COYOTE
+    [`A_C_Coyote`] = CompatGroup.COYOTE,
+    [`A_C_Coyote_02`] = CompatGroup.COYOTE,
+
+    -- popcornrp-pets: https://github.com/alberttheprince/popcornrp-pets
+    [`redfoxprp`] = CompatGroup.COYOTE,
+    [`dingo`] = CompatGroup.COYOTE,
 
 }
 
@@ -339,6 +351,17 @@ local emoteCompatibility = {
         'catshuffleleft',
         'ccat2',
      },
+    [CompatGroup.COYOTE] = {
+        'coyinspect',
+        'coyagree',
+        'coyhowl',
+        'coyplaydead',
+        'coyrest',
+        'coysit',
+        'coyhowlexit',
+        'coylayexit',
+        'coyplaydeadexit',
+    },
 }
 
 --- Build a map of each CompatGroup to all its ancestors (parent groups)
