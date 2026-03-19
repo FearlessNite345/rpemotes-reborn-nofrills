@@ -1,4 +1,4 @@
-﻿-- ALL custom animations added to this repository were added with express permission from the creators and do not contain any paid content --
+-- ALL custom animations added to this repository were added with express permission from the creators and do not contain any paid content --
 -- If an emote does not work, you may be on an older gamebuild --
 -- To get a higher gamebuild, see ReadMe on github repository --
 
